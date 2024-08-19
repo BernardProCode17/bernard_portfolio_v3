@@ -4,7 +4,7 @@ import Link from 'next/link'
 import MenuButton from "../minor components/MenuButton"
 import MenuNavigation from "../minor components/MenuNavigation"
 
-export default function Header(isMenuOpen: boolean) {
+export default function Header() {
     return (
         <header className="header">
 

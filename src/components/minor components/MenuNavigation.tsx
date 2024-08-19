@@ -1,11 +1,20 @@
+"use client"
 import Link from 'next/link'
 import Button from './Button'
+import { Dispatch, SetStateAction, useState } from 'react'
+
+export let isOpenExport: Dispatch<SetStateAction<boolean>>;
 
 export default function MenuNavigation() {
-   
+    const [isOpen, setIsOpen] = useState(false)
+    isOpenExport = setIsOpen;
+
+    function closeButton(){
+        setIsOpen(false)
+    }
 
     return (
-        <nav className='header_nav'>
+        <nav  className={isOpen ? 'header_nav-active' : 'header_nav'}>
             <ul className='header_nav-ul'>
 
                 <li className='header_nav-li'>
@@ -32,7 +41,7 @@ export default function MenuNavigation() {
                     <Link href='/votd' className='header_nav-link'>Verse Of The Day</Link>
                 </li>
             </ul>
-            <Button content="Close" />
+            <Button content="Close" clickFunction={closeButton} />
         </nav>
     )
 }

@@ -1,47 +1,49 @@
 .header {
-    background-color: var(--primary-color);
-    padding: 1.25rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  background-color: var(--primary-color);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header_menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header_button {
-    background-color: transparent;
-    color: var(--primary-color);
-    border: none;
-    cursor: pointer;
+  background-color: transparent;
+  color: var(--primary-color);
+  border: none;
+  cursor: pointer;
 }
 
 .header_nav {
-    display: none;
+  display: none;
 }
 .header_nav-active {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    row-gap: 5rem;
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    right: 0;
-    top: 0;
-    background-color: lightgreen
-    
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 5rem;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  right: 0;
+  top: 0;
+  background-color: var(--secondary-color);
 }
 
+.header_nav-ul {}
+
+.header_nav-li {}
+
 .header_icon {
-    color: var(--secondary-color);
-    width: 3.125rem;
-    height: 3.125rem;
+  color: var(--secondary-color);
+  width: 3.125rem;
+  height: 3.125rem;
 }
