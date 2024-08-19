@@ -21,29 +21,122 @@
   cursor: pointer;
 }
 
+.header_icon {
+  color: var(--secondary-color);
+  width: 3.125rem;
+  height: 3.125rem;
+}
+
+/* Navigation Menu */
 .header_nav {
   display: none;
 }
+/* Toggled Menu */
 .header_nav-active {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  row-gap: 5rem;
+  row-gap: 2rem;
   position: absolute;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   right: 0;
   top: 0;
   background-color: var(--secondary-color);
 }
 
-.header_nav-ul {}
+/* .header_nav-container {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  background-color: var(--primary-color);
+  width: 100%;
+  height: 100%
+} */
 
-.header_nav-li {}
+.header_nav-ul {
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
 
-.header_icon {
+.header_nav-li {
+  background-color: var(--secondary-color);
+  margin: 0.7rem auto;
+}
+
+.header_nav-link {
+  font-size: 27px;
+  text-align: center;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+/* Verse of the Day Button */
+.header_nav_link-votd {
+  font-size: 27px;
+  text-align: center;
+  font-weight: 500;
   color: var(--secondary-color);
-  width: 3.125rem;
-  height: 3.125rem;
+  padding: 0.5rem 2rem;
+  background-color: #0ae427;
+  border: 1px solid transparent;
+  border-radius: 1.875rem;
+  cursor: pointer;
+}
+.header_nav_link-votd:hover,
+.header_nav_link-votd:active {
+  transform: scale(1.03, 1.03);
+  transition: transform 0.7s;
+}
+
+/* Header Navigation Links Selections */
+.header_nav-link:hover,
+.header_nav-link:active {
+  border: 1.2px solid var(--selection-color);
+  padding: 0.5rem 2rem;
+  border-radius: 1.875rem;
+}
+
+.header_nav_link-active {
+  background-color: var(--selection-color);
+  padding: 0.5rem 2rem;
+  border-radius: 1.875rem;
+  color: var(--secondary-color);
+}
+
+/* Menu Close Button */
+.header_nav-close {
+  background-color: var(--text-color);
+  border: none;
+  color: var(--secondary-color);
+  padding: 1rem 5rem;
+  border-radius: 1.875rem;
+  color: var(--secondary-color);
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+/* Media queries for navigation menu width */
+@media (min-width: 48rem) {
+  .header_nav-container {
+    background-color: var(--primary-color);
+    border: 10px solid blue;
+    width: auto;
+  }
+  .header_nav-active {
+    width: 50%;
+    border-left: 1px solid var(--primary-color);
+  }
+}
+
+@media (min-width: 80rem) {
+  .header_nav-active {
+    width: 30%;
+    height: 99.7%;
+    border-left: 1px solid var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+  }
 }
