@@ -1,0 +1,16 @@
+body{
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--secondary-color);
+    font-size: 1.0625em;
+    line-height: 1.5;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    transition: background-color 0.5s;
+    min-width: 320px;
+    width: 100%;
+}

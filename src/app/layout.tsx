@@ -1,5 +1,7 @@
 import { Metadata } from "next/types";
-import "./globals.css";
+import "../styles/globals.css";
+import Header from "@/components/header_footer/Header";
+import Footer from "@/components/header_footer/Footer";
 
 export const metadata: Metadata = {
   title: "Bernard Clarke | Front-end Javascript React developer",
@@ -7,13 +9,15 @@ export const metadata: Metadata = {
 };
 
 
-export default function RootLayout({children,}: Readonly<{children: React.ReactNode;}>) {
+export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
 
   return (
     <html lang="en">
 
-      <body>
+      <body className="body">
+        <Header />
         {children}
+        {/* <Footer /> */}
       </body>
 
     </html>
