@@ -2,3 +2,4 @@
 @import 'variable.css';
 @import 'basicStyles.css';
 @import 'header.css';
+@import '../components/VOTD/VOTD.css';
