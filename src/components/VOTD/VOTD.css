@@ -1,10 +1,57 @@
 .modal {
-   display: none;
+  display: none;
 }
 
 .modal-active {
-   display:flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--modal-background);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+}
+.modal_section {
+  background-color: var(--secondary-color);
+  width: 70%;
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 0.625rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.modal_close_container {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+
+  & .modal_close {
+    background-color: transparent;
+    border: none;
+
+    & svg {
+      width: 2em;
+      height: 2em;
+      fill: var(--primary-color);
+    }
+
+    & svg:hover,
+    svg:active {
+      background-color: var(--text-color);
+    }
+  }
+}
+
+.modal_title_container {
+  margin: 1rem 0;
+  text-align: center;
+  & h2,
+  h3 {
+    margin: 0.7rem 0;
+  }
 }

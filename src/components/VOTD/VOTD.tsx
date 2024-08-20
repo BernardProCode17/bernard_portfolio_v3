@@ -37,27 +37,32 @@ export default function VOTD() {
    }
 
    return (
-      <section className={modal ? 'modal-active' : 'modal'}>
-         <span>
-            <button onClick={() => setModal(false)}>
-               <IoClose />
-            </button>
-         </span>
+      <div className={modal ? 'modal-active' : 'modal'}>
 
-         <h2>Verse Of The Day</h2>
+         <section className='modal_section'>
 
-         <h3>{!details.reference ? 'Loading...' : details.reference}</h3>
+            <span className="modal_close_container">
+               <button className="modal_close" onClick={() => setModal(false)}>
+                  <IoClose />
+               </button>
+            </span>
 
-         <article>
-            {!details.text ? 'Loading...' : <q>{details.text}</q>}
-         </article>
+            <div className="modal_title_container">
+               <h2 className="modal_title">Verse Of The Day</h2>
+               <h3 className="modal_reference">{!details.reference ? 'Loading...' : details.reference}</h3>
+            </div>
 
-         <span>
-            <button onClick={() => clipboard()}>Copy to clipboard</button>
-            <span>{copied}</span>
-         </span>
+            <article className="modal_content">
+               {!details.text ? <span className="modal_loading">&rsquo;Loading...&rsquo;</span> : <q className="modal_verse">{details.text}</q>}
+            </article>
 
-         <span>{attribution}</span>
-      </section>
+            <span className="modal_copy_container">
+               <button className="modal_copy" onClick={() => clipboard()}>Copy to clipboard</button>
+               <span className="modal_copied">{copied}</span>
+            </span>
+
+            <span className="modal_attribution">{attribution}</span>
+         </section>
+      </div>
    )
 }
