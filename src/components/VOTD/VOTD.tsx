@@ -1,5 +1,8 @@
 "use client"
-import { useState, useEffect } from "react"
+import { useState, useEffect, Dispatch, SetStateAction } from "react"
+import { IoClose } from "react-icons/io5";
+
+export let setModalexport: Dispatch<SetStateAction<boolean>>;
 
 export default function VOTD() {
 
@@ -11,7 +14,9 @@ export default function VOTD() {
    const [details, setDetails] = useState<VerseDetails>({});
    const [copied, setCopied] = useState<string>('');
    const [attribution, setAttribution] = useState<string>('');
+   const [modal, setModal] = useState(false);
 
+   setModalexport = setModal;
 
    useEffect(() => {
       async function VOTDData() {
@@ -32,7 +37,13 @@ export default function VOTD() {
    }
 
    return (
-      <section style={{ margin: "10rem 5rem", display: 'flex', flexDirection: 'column' }}>
+      <section className={modal ? 'modal-active' : 'modal'}>
+         <span>
+            <button onClick={() => setModal(false)}>
+               <IoClose />
+            </button>
+         </span>
+
          <h2>Verse Of The Day</h2>
 
          <h3>{!details.reference ? 'Loading...' : details.reference}</h3>
@@ -44,7 +55,6 @@ export default function VOTD() {
          <span>
             <button onClick={() => clipboard()}>Copy to clipboard</button>
             <span>{copied}</span>
-
          </span>
 
          <span>{attribution}</span>

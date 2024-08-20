@@ -1,0 +1,10 @@
+.modal {
+   display: none;
+}
+
+.modal-active {
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
