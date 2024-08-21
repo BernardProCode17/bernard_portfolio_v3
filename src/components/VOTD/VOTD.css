@@ -11,6 +11,7 @@
   width: 100%;
   height: 100vh;
   position: absolute;
+  min-width: 20rem;
 }
 .modal_section {
   background-color: var(--secondary-color);
@@ -23,35 +24,98 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  top: 10%;
 }
 
 .modal_close_container {
   position: absolute;
   top: 5%;
   right: 5%;
-
+  
   & .modal_close {
     background-color: transparent;
     border: none;
+    cursor: pointer;
 
     & svg {
-      width: 2em;
-      height: 2em;
+      width: 2.5em;
+      height: 2.5em;
       fill: var(--primary-color);
     }
 
     & svg:hover,
     svg:active {
-      background-color: var(--text-color);
+      background-color: var(--modal-background);
+      border-radius: 0.625rem;
+      width: 2.1875rem;
+      fill: var(--secondary-color);
     }
   }
 }
 
 .modal_title_container {
-  margin: 1rem 0;
+  margin: 2rem 0 1rem;
   text-align: center;
+
   & h2,
   h3 {
     margin: 0.7rem 0;
+  }
+}
+
+.modal_content {
+  margin-bottom: 2rem;
+  background-color: var(--primary-color);
+  padding: 1rem;
+  border-radius: 0.625rem;
+  width: 100%;
+  text-align: center;
+}
+
+.modal_verse {
+  color: var(--secondary-color);
+  width: 100%;
+}
+
+.modal_copy_container {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 0.7rem;
+}
+
+.modal_copy {
+  background-color: var(--primary-color);
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.625rem;
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+.modal_copied {
+  padding: 0.1rem 0.5rem;
+  color: var(--logo-green);
+}
+
+.modal_attribution {
+  font-size: 0.7rem;
+}
+
+
+/* Media queries */
+
+@media (min-width: 45rem) {
+
+  .modal_section {
+    max-width: 50%;
+  }
+}
+@media (min-width: 1024px) {
+
+  .modal_section {
+    max-width: 30%;
   }
 }

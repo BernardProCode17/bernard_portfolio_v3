@@ -2,7 +2,7 @@
 import Link from 'next/link'
 import Button from './Button'
 import { Dispatch, SetStateAction, useState } from 'react'
-import { setModalexport } from '../VOTD/VOTD';
+import { setModalexport} from '../VOTD/VOTD';
 
 export let isOpenExport: Dispatch<SetStateAction<boolean>>;
 
@@ -10,13 +10,20 @@ export default function MenuNavigation() {
     const [isOpen, setIsOpen] = useState(false)
     isOpenExport = setIsOpen;
 
+
+
+
     function closeButton() {
+        setIsOpen(false)
+    }
+
+    function closeModal() {
         setModalexport(true)
         setIsOpen(false)
     }
 
     return (
-        // <div className='header_nav-container'>
+
         < nav className={isOpen ? 'header_nav-active' : 'header_nav'} >
             <ul className='header_nav-ul'>
 
@@ -41,11 +48,11 @@ export default function MenuNavigation() {
                 </li>
                 {/* onclick render VOTD component */}
                 <li className='header_nav-li'>
-                    <button className='header_nav_link-votd' onClick={closeButton}>Verse Of The Day</button>
+                    <button className='header_nav_link-votd' onClick={closeModal}>Verse Of The Day</button>
                 </li>
             </ul>
             <Button content="Close" clickFunction={closeButton} />
         </nav>
-        // </div>
+
     )
 }

@@ -1,8 +1,13 @@
 "use client"
+// imports
 import { useState, useEffect, Dispatch, SetStateAction } from "react"
 import { IoClose } from "react-icons/io5";
+import Link from 'next/link'
 
+import { clipboard } from "@/functions/VOTD";
+// exports
 export let setModalexport: Dispatch<SetStateAction<boolean>>;
+export let Modalexport: boolean;
 
 export default function VOTD() {
 
@@ -17,6 +22,7 @@ export default function VOTD() {
    const [modal, setModal] = useState(false);
 
    setModalexport = setModal;
+  
 
    useEffect(() => {
       async function VOTDData() {
@@ -28,13 +34,7 @@ export default function VOTD() {
       VOTDData()
    }, [])
 
-   function clipboard() {
-      navigator.clipboard.writeText(details.text).then(
-         () => {
-            setCopied('Verse of the Day')
-            setTimeout(() => setCopied(''), 2000)
-         })
-   }
+
 
    return (
       <div className={modal ? 'modal-active' : 'modal'}>
@@ -57,11 +57,15 @@ export default function VOTD() {
             </article>
 
             <span className="modal_copy_container">
-               <button className="modal_copy" onClick={() => clipboard()}>Copy to clipboard</button>
+               <button className="modal_copy" onClick={() => clipboard(setCopied, details)}>Copy to clipboard</button>
                <span className="modal_copied">{copied}</span>
             </span>
 
-            <span className="modal_attribution">{attribution}</span>
+            <span className="modal_attribution">
+               <Link href="https://www.ourmanna.com">
+               {attribution}               
+               </Link>
+               </span>
          </section>
       </div>
    )
