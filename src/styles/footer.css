@@ -1,0 +1,128 @@
+.footer {
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* logo */
+.footer_logo-container {
+  border-bottom: 5px solid var(--tertiary-color);
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+}
+.footer_logo {
+  margin-bottom: 1rem;
+}
+
+/* footer Navigation */
+.footer_nav {
+  border-bottom: 5px solid var(--tertiary-color);
+}
+
+.footer_ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  font-size: 1.3em;
+  color: var(--secondary-color);
+}
+
+.footer_li {
+  margin: 0.3rem 0.5rem;
+}
+
+.footer_nav-link {
+   padding: 0.2rem 0.8rem;
+
+}
+.footer_nav-link:hover {
+  text-decoration: underline;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  border-radius: 10px;
+}
+
+
+/* socia connections */
+
+.footer_social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1rem;
+  border-bottom: 5px solid var(--tertiary-color);
+  width: 100%;
+}
+
+.footer_social_links {
+  margin: 1rem 0.5rem;
+  width: 100;
+}
+.footer_social_links:hover,
+.footer_social_links:active {
+}
+
+/* Links SVG */
+.footer_social_links svg {
+  fill: var(--secondary-color);
+  height: 2.5rem;
+  width: 2.5rem;
+}
+.footer_social_links svg:hover,
+.footer_social_links svg:active {
+  background-color: var(--selection-color);
+  fill: var(--secondary-color);
+  border-radius: 15%;
+  height: 2.3rem;
+  width: 2.3rem;
+}
+
+/* Footer Details */
+.footer_details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 0.3rem;
+  align-items: center;
+  color: var(--secondary-color);
+  margin: 1rem 0rem;
+}
+
+.footer_details-author {
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.footer_details-made-with {
+  text-align: center;
+  margin: 0.3rem 0rem;
+  background-color: var(--tertiary-color-light);
+  color: var(--text-color);
+  padding: 0.3rem;
+  border-radius: 0.3125rem;
+  width: 150%;
+}
+
+.footer_details-made-tech {
+  display: block;
+  margin: 0.7rem auto 0;
+  font-size: 1.157rem;
+  width: max-content;
+  text-align: center;
+}
+
+
+/* Footer Media queries */
+/* 48 rem and 80 rem */
+
+@media(min-width: 48rem){
+   
+}

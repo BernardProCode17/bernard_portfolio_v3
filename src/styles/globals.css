@@ -3,3 +3,4 @@
 @import 'basicStyles.css';
 @import 'header.css';
 @import '../components/VOTD/VOTD.css';
+@import './footer.css';
