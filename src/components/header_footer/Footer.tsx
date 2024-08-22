@@ -24,7 +24,7 @@ export default function Footer() {
             <div className="footer_details">
                 <p className="footer_details-author" id="author">Bernard Clarke</p>
                 <p className="footer_details-made-with">Made with
-                <span className="footer_details-made-tech">#Next.Js<br/>#TypeScript</span>
+                <span className="footer_details-made-tech">#Next.Js #TypeScript</span>
                 </p>
                 <span className="footer_details-year">&copy; 2024</span>
             </div>
