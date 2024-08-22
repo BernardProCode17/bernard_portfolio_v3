@@ -33,6 +33,7 @@
   padding: 0;
   font-size: 1.3em;
   color: var(--secondary-color);
+  width: 90%;
 }
 
 .footer_li {
@@ -41,6 +42,7 @@
 
 .footer_nav-link {
   padding: 0.1rem 0.5rem;
+  font-size: 1.1rem;
 }
 .footer_nav-link:hover {
   background-color: var(--secondary-color);
@@ -136,7 +138,9 @@
   }
   
   .footer_logo {
-   margin-bottom: 0rem;
+   margin-bottom: 0rem;   
+    width: 4.375rem;
+    height: 4.375rem;  
   }
   .footer_nav {
     flex-grow: 1;
@@ -161,5 +165,28 @@
 
   .footer_social {
    flex-basis: 100%;
+  }
+}
+
+@media(min-width: 80rem) {
+
+  .footer_logo-container,
+  .footer_nav,
+  .footer_social {
+   flex-basis: 15%;
+  }
+
+  .footer_logo-container,
+  .footer_social {
+    flex-grow: 1;
+  }
+
+  .footer_ul {
+    justify-content: center;
+    margin: 0rem auto;
+  }
+
+  .footer_details-made-with {
+    width: 20%;
   }
 }

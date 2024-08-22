@@ -130,6 +130,11 @@
     width: 50%;
     border-left: 1px solid var(--primary-color);
   }
+
+  .header_logo img {
+    width: 4.6875rem;
+    height: 4.6875rem;
+  }
 }
 
 @media (min-width: 80rem) {
@@ -138,5 +143,10 @@
     height: 99.7%;
     border-left: 1px solid var(--primary-color);
     border-bottom: 1px solid var(--primary-color);
+  }
+
+  .header_logo img {
+    width: 6.25rem;
+    height: 6.25rem;
   }
 }
