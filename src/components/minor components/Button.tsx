@@ -1,14 +1,15 @@
 "use client"
 type ButtonProps = {
     content: string;
-    clickFunction: () => void;
+    clickFunction?: () => void;
+    cssClass: string;
 };
 
-export default function Button({ content, clickFunction }: ButtonProps) {
-    const click = () => { clickFunction() }
+export default function Button({ content, clickFunction, cssClass }: ButtonProps) {
+    const click = () => { clickFunction && clickFunction() }
 
     return (
-        <button className="button header_nav-close" onClick={click}>
+            <button className={`button header_nav-close ${cssClass}`}onClick={click}>
             {content}
         </button>
     );
