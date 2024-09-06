@@ -1,3 +1,4 @@
+import BriefStatment from "@/components/home/BriefStatment";
 import HeadingSection from "@/components/minor components/HeadingSection";
 import { JSLottie } from "@/components/minor components/lottie";
 import Link from "next/link";
@@ -5,6 +6,8 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main>
+
+      {/* Home Page Banner Section */}
       <HeadingSection cssClass="home_header">
         <div className="home_header-intro">
           <h1 className="header_intro-title">Bernard Clarke</h1>
@@ -21,6 +24,9 @@ export default function Home() {
         </div>
 
       </HeadingSection>
+
+      {/*  Brief Statment Section*/}
+      <BriefStatment/>
     </main>
   );
 }

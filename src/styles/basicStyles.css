@@ -4,7 +4,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: var(--secondary-color);
-  font-size: 1.0625em;
+  font-size: 1.0625rem;
   line-height: 1.5;
   color: var(--text-color);
   display: flex;
@@ -39,4 +39,13 @@ ul {
 li {
     list-style: none;
     margin: 0.3rem;
+}
+
+P {
+  margin: 0.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: inherit;
+  margin: 0.5rem;
 }
