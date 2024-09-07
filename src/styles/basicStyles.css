@@ -41,11 +41,27 @@ li {
     margin: 0.3rem;
 }
 
-P {
+p {
   margin: 0.5rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: inherit;
   margin: 0.5rem;
+}
+
+.link{
+  border: 2px solid var(--primary-color);
+  border-radius: 0.5rem;
+  padding: 0.35rem 0.7rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--primary-color);
+  width: max-content;
+  text-align: center;
+  transition: background-color 0.5s, color 0.5s;
+  -webkit-transition: background-color 0.5s, color 0.5s;
+  -moz-transition: background-color 0.5s, color 0.5s;
+  -ms-transition: background-color 0.5s, color 0.5s;
+  -o-transition: background-color 0.5s, color 0.5s;
 }

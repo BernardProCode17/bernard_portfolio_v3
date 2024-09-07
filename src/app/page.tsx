@@ -1,6 +1,7 @@
-import BriefStatment from "@/components/home/BriefStatment";
+import BriefStatment from "@/components/home_page_components/BriefStatment";
+import HomePageProjects from "@/components/home_page_components/HomePageProjects";
 import HeadingSection from "@/components/minor components/HeadingSection";
-import { JSLottie } from "@/components/minor components/lottie";
+import { JSLottie } from "@/components/minor components/lotties/lottie";
 import Link from "next/link";
 
 export default function Home() {
@@ -27,6 +28,10 @@ export default function Home() {
 
       {/*  Brief Statment Section*/}
       <BriefStatment/>
+
+      {/* Projects Section */}
+      <HomePageProjects/>
+      
     </main>
   );
 }

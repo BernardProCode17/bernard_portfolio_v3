@@ -3,6 +3,7 @@
     background-color: var(--tertiary-color);
     padding: 5px;
     border-radius: 0.625rem;
+    border-bottom: none;
     -webkit-border-radius: 0.625rem;
     -moz-border-radius: 0.625rem;
     -ms-border-radius: 0.625rem;
@@ -16,4 +17,11 @@
 
 .statment_content {
     text-align: center;
+}
+
+@media screen and (min-width: 64rem) {
+    .statment_content {
+        max-width: 50rem
+    }
+    
 }
