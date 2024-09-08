@@ -1,5 +1,6 @@
 import BriefStatment from "@/components/home_page_components/BriefStatment";
 import HomePageProjects from "@/components/home_page_components/HomePageProjects";
+import HomePageSkills from "@/components/home_page_components/HomePageSkills";
 import HeadingSection from "@/components/minor components/HeadingSection";
 import { JSLottie } from "@/components/minor components/lotties/lottie";
 import Link from "next/link";
@@ -27,11 +28,16 @@ export default function Home() {
       </HeadingSection>
 
       {/*  Brief Statment Section*/}
-      <BriefStatment/>
+      <BriefStatment />
 
       {/* Projects Section */}
-      <HomePageProjects/>
-      
+      <HomePageProjects />
+
+      {/* Skills Section */}
+      <HomePageSkills />
+      {/* skills section span border */}
+      <span className="home_skills-span"></span>
+
     </main>
   );
 }
