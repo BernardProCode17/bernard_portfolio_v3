@@ -11,20 +11,20 @@ export default function Footer() {
 
             {/* Logo */}
             <div className="footer_logo-container">
-            <Image src={logo} alt="Bernard Clarke logo -'Letter B in curly braces" className="footer_logo" />
+                <Image src={logo} alt="Bernard Clarke logo -'Letter B in curly braces" className="footer_logo" />
             </div>
 
             {/* Navigation */}
             <FooterNavigation />
 
             {/* social connections */}
-            <SocialConnections />
+            <SocialConnections divClass="footer_social" linkClass="footer_social_links" />
 
             {/* footer copy */}
             <div className="footer_details">
                 <strong className="footer_details-author" id="author">Bernard Clarke</strong>
                 <p className="footer_details-made-with">Made with
-                <em className="footer_details-made-tech">#Next.Js #TypeScript</em>
+                    <em className="footer_details-made-tech">#Next.Js #TypeScript</em>
                 </p>
                 <span className="footer_details-year">&copy; 2024</span>
             </div>

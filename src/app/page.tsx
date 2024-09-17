@@ -1,4 +1,5 @@
 import BriefStatment from "@/components/home_page_components/BriefStatment";
+import HomeAbout from "@/components/home_page_components/HomeAbout";
 import HomePageProjects from "@/components/home_page_components/HomePageProjects";
 import HomePageSkills from "@/components/home_page_components/HomePageSkills";
 import HeadingSection from "@/components/minor components/HeadingSection";
@@ -35,9 +36,12 @@ export default function Home() {
 
       {/* Skills Section */}
       <HomePageSkills />
+      
       {/* skills section span border */}
       <span className="home_skills-span"></span>
 
+      {/* About Section */}
+      <HomeAbout />
     </main>
   );
 }

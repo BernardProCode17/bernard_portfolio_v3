@@ -51,7 +51,7 @@ export default function MenuNavigation() {
                     <button className='header_nav_link-votd' onClick={closeModal}>Verse Of The Day</button>
                 </li>
             </ul>
-            <Button content="Close" clickFunction={closeButton} />
+            <Button content="Close" clickFunction={closeButton} cssClass='button header_nav-close' />
         </nav>
 
     )

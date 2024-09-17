@@ -1,0 +1,9 @@
+.home_about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 0;
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+}
