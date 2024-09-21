@@ -116,6 +116,7 @@
         flex-direction: row;
         position: relative;
         justify-content: start;
+        height: 79vh;
     }
 
     /* Reorder element for desktop */

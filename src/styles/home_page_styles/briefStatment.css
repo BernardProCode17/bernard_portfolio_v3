@@ -1,4 +1,4 @@
-.brief_statment {
+.brief_statement {
     margin: 1.875rem 0;
     background-color: var(--tertiary-color);
     padding: 5px;
@@ -10,17 +10,18 @@
     -o-border-radius: 0.625rem;
 }
 
-.statment_title {
+.statement_title {
     font-size: 1.5rem;
     font-weight: 500;
 }
 
-.statment_content {
-    text-align: center;
+.statement_content {
+    text-align: start;
+    margin: 0;
 }
 
 @media screen and (min-width: 64rem) {
-    .statment_content {
+    .statement_content {
         max-width: 50rem
     }
     
