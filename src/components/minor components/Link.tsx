@@ -7,6 +7,6 @@ type linkProps = {
 }
 export default function ProjectLink({text, href, cssClass}: linkProps) {
     return (
-<Link href={href} className={cssClass}>{text}</Link>
+        <Link href={href} className={cssClass}>{text}</Link>
     );
 }

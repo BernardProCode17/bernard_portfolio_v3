@@ -7,9 +7,9 @@ export default function BriefStatement() {
             <h2 className="statement_title">Brief Statement</h2>
             <p className="statment_content">Discovering web development a few years ago, I was interested, so I
                 attended <abbr title="British Columbia Institute of Technology">BCIT</abbr> to learn
-                programming the right way.
+                programming and graduated with distinction.
             </p>
-            <p>Now I'm building web apps and learning new tech, expanding my experience and skills.</p>
+            <p>Now I&apos;m building web apps and learning new programming tech, expanding my skillset and experience.</p>
 
         </PageSections>
     )

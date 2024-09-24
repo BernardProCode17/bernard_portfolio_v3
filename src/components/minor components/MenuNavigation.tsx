@@ -32,7 +32,7 @@ export default function MenuNavigation() {
                 </li>
 
                 <li className='header_nav-li'>
-                    <Link href='/project' className='header_nav-link'>Projects</Link>
+                    <Link href='/projects' className='header_nav-link'>Projects</Link>
                 </li>
 
                 <li className='header_nav-li'>

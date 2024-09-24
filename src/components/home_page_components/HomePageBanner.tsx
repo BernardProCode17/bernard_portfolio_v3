@@ -18,8 +18,8 @@ export default function HomePageBanner() {
                 <JSLottie/>
 
                 <div className="home_header-links">
-                    <Link href='projects' className="home_header_links-projects">Projects</Link>
-                    <Link href='skills' className="home_header_links-skills">Skills</Link>
+                    <Link href='/projects' className="home_header_links-projects">Projects</Link>
+                    <Link href='/skills' className="home_header_links-skills">Skills</Link>
                 </div>
 
             </HeadingSection></>
