@@ -17,6 +17,15 @@ export const projectsType = defineType({
             type: 'string',
         }),
         defineField({
+            name: 'slug',
+            title: 'Slug',
+            type: 'slug',
+            options: {
+                source: 'title',
+                maxLength: 96,
+            },
+        }),
+        defineField({
             name: 'short_des',
             title: 'Short Description',
             type: 'string',

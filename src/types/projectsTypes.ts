@@ -1,5 +1,6 @@
 export type ProjectCardProps = {
     title: string,
+    slug: string
     short_des: string,
     long_des: string,
     feature: string[],
