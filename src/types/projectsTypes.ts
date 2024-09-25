@@ -10,6 +10,4 @@ export type ProjectCardProps = {
     project_links: string[]
 }
 
-export type ProjectProp = {
-    project: ProjectCardProps
-}
+export type ProjectProp = {project: ProjectCardProps}
