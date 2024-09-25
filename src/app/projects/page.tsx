@@ -1,22 +1,10 @@
-"use client"
-
 import HeadingSection from "@/components/minor components/HeadingSection";
-import {client} from '@/sanity/lib/client';
-import {fetchProjectQuery} from "@/functions/fetchFunctions";
+import { client } from '@/sanity/lib/client';
+import { fetchProjectQuery } from "@/functions/fetchFunctions";
 
-async function getServerSideProps() {
-    const projects = await client.fetch(fetchProjectQuery);
-    // const projects1 = await projects.json()
-    console.log("projects props side", projects);
-    return {props: {projects}};
-}
-getServerSideProps()
-
-export default function Project() {
-    // const projectsResults = client.fetch(fetchProjectQuery);
-    const projects = getServerSideProps()
-    // console.log(projects);
-    // console.log(projectsResults);
+export default async function Project() {
+    const projectsResults = await client.fetch(fetchProjectQuery);
+    console.log(projectsResults)
 
     return (
         <main>
@@ -28,9 +16,7 @@ export default function Project() {
             </HeadingSection>
 
             <section>
-                {projects.map((project, index) => (
-                    <ProjectCard project={project} key={index} />
-                ))}
+
             </section>
         </main>
     )
