@@ -1,0 +1,31 @@
+.connection {
+  border: 0.125rem solid var(--primary-color-border);
+  border-radius: 0.625rem;
+  /* row-gap: 0.3rem; */
+  width: 100%;
+}
+
+.connection_content {
+  font-size: clamp(0.8125rem 50% 1.125rem);
+  text-align: center;
+  width: 100%;
+}
+.social_connection_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.social_connection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  margin: 1rem 0;
+}
+
+.social_connection_link svg {
+  width: 35px;
+  height: auto;
+  margin: 0 0.5rem;
+}

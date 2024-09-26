@@ -18,7 +18,7 @@ export default function Footer() {
             <FooterNavigation />
 
             {/* social connections */}
-            <SocialConnections divClass1="footer_social-container" divClass2="footer_social" linkClass="footer_social_links" />
+            <SocialConnections divClass1="social_connection_container" divClass2="social_connection" linkClass="social_connection_link"/>
 
             {/* footer copy */}
             <div className="footer_details">

@@ -1,63 +1,81 @@
 .project_card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin: 2rem 0;
-    border: 0.125rem solid var(--primary-color-border);
-    border-radius: 0.625rem;
-    -webkit-border-radius: 0.625rem;
-    -moz-border-radius: 0.625rem;
-    -ms-border-radius: 0.625rem;
-    -o-border-radius: 0.625rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 1rem;
+  align-items: center;
+  width: 100%;
+  margin: 2rem;
+  border: 0.125rem solid var(--primary-color-border);
+  border-radius: 0.625rem;
+  -webkit-border-radius: 0.625rem;
+  -moz-border-radius: 0.625rem;
+  -ms-border-radius: 0.625rem;
+  -o-border-radius: 0.625rem;
 }
 
-.project_card:hover {
-    box-shadow: 0.0625rem 0.0625rem 15px #002FAD;
+.project_card:hover,
+.project_card:active {
+  box-shadow: 0.0625rem 0.0625rem 15px #002fad;
 }
 
 .project_card_image-container {
-    width: 90%;
-    padding: 1rem;
+  width: 90%;
+  padding: 1rem;
 }
 
 .project_card_image {
-    width: 100%;
-    border-radius: 0.625rem;
-    -webkit-border-radius: 0.625rem;
-    -moz-border-radius: 0.625rem;
-    -ms-border-radius: 0.625rem;
-    -o-border-radius: 0.625rem;
+  width: 100%;
+  height: auto;
+  border-radius: 0.625rem;
+  -webkit-border-radius: 0.625rem;
+  -moz-border-radius: 0.625rem;
+  -ms-border-radius: 0.625rem;
+  -o-border-radius: 0.625rem;
 }
 
 .project_card_content-container {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
 }
 
 .project_card_title,
 .project_card_short_desc {
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.project_card_title{
+  border-bottom: 0.1875rem solid var(--primary-color);
+  width:50%;
+  text-align: center;
 }
 
 .project_card_short_desc {
-    width: 100%;
-    font-size: 15px;
+  width: 90%;
+  font-size: 0.9375rem;
+  text-align: center;
 }
 
 .project_card_link {
-    margin: 1rem;
-    font-size: 0.9375rem;
+  margin: 1rem;
+  font-size: 0.9375rem;
+  border: 0.0625rem solid var(--primary-color)
 }
 
 .project_card_link:hover {
-    padding: 0;
-    width: 131.117px;
-    height: 45px;
-    text-align: center;
+ background-color: var(--primary-color);
+ color: var(--secondary-color);
+ font-size: 0.9375rem
+}
+
+
+@media (min-width: 48.125rem){
+  .project_card{
+    width: 30%;
+    max-height: 950px;
+  }
 }

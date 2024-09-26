@@ -4,6 +4,7 @@ import { fetchProjectQuery } from "@/functions/fetchFunctions";
 import ProjectCard from "@/components/project_page_component/project_card";
 import { ProjectCardProps } from "@/types/projectsTypes";
 import { Key } from "react";
+import Connection from "@/components/minor components/Connection";
 
 export default async function Project() {
 
@@ -25,8 +26,10 @@ export default async function Project() {
                 {projectsResults.map((project: ProjectCardProps, index: Key | null | undefined) => (
                     <ProjectCard key={index} project={project} />
                 ))}
-
             </div>
+
+            {/* Social Connection */}
+            <Connection/>
         </main>
     )
 };

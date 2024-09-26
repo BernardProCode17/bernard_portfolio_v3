@@ -31,7 +31,7 @@ export default function HomeAbout() {
                              subtitle="Front-End Web Developer"/>
 
                     {/* Social Connections and Contact Button */}
-                    <SocialConnections divClass2="home_about_social" divClass1="home_about_social-container" linkClass="home_about_social-links"/>
+                    <SocialConnections />
                     <ProjectLink href={"/contact"} cssClass={"home_about_button link"} text="Contact"/>
                 </div>
             </div>
