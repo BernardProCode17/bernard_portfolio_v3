@@ -18,7 +18,7 @@ export default function ProjectCard({ project }: ProjectProp): JSX.Element {
             <div className="project_card_content-container">
                 <h3 className="project_card_title">{title && title || 'Project Title'}</h3>
                 <p className="project_card_short_desc">{short_des && short_des || 'short description'}</p>
-                <ProjectLink text="Learn More" href={`/project/${slug}`} cssClass="project_card_link link" />
+                <ProjectLink text="Learn More" href={`/projects/${slug}`} cssClass="project_card_link link" />
             </div>
 
         </article>
