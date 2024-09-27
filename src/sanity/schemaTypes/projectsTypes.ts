@@ -1,4 +1,5 @@
-import {defineField, defineType} from "sanity";
+import { defineField, defineType } from "sanity";
+import { ArticleContent, featuretype} from "./ArticleContent";
 
 const urlValidation = (Rule: any) => Rule.uri({
     scheme: ['http', 'https'],
@@ -26,32 +27,31 @@ export const projectsType = defineType({
             },
         }),
         defineField({
-            name: 'short_des',
+            name: 'short_description',
             title: 'Short Description',
             type: 'string',
             description: 'Short description of the project, 100 characters max',
             validation: (Rule: any) => Rule.max(100).warning('Short Description should be less than 100 characters'),
         }),
         defineField({
-            name: 'long_des',
+            name: 'long_description',
             title: 'Long Description',
-            type: 'blockContent',
+            type: 'ArticleContent',
         }),
         defineField({
             name: 'feature',
             title: 'Features',
-            type: 'array',
-            of: [{type: 'string'}],
+            type: 'featuretype',
         }),
         defineField({
             name: 'challenges_solutions',
             title: 'Challenges and Solutions',
-            type: 'blockContent',
+            type: 'ArticleContent',
         }),
         defineField({
             name: 'reflection',
             title: 'Reflections',
-            type: 'blockContent',
+            type: 'ArticleContent',
         }),
         defineField({
             name: 'project_image',
@@ -69,7 +69,7 @@ export const projectsType = defineType({
             name: 'project_links',
             title: 'Project Links',
             type: 'array',
-            of: [{type: 'url', validation: urlValidation}],
+            of: [{ type: 'url', validation: urlValidation }],
         }),
     ]
 })

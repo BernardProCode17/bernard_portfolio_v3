@@ -1,12 +1,12 @@
-import { urlFor } from "@/sanity/lib/image";
 import { ProjectProp } from "@/types/projectsTypes";
+import { urlFor } from "@/sanity/lib/image";
 import { Image } from "next-sanity/image";
 import ProjectLink from "../minor components/Link";
 
 
 export default function ProjectCard({ project }: ProjectProp): JSX.Element {
 
-    const { title, short_des, project_image, project_image_alt, slug, ...rest } = project;
+    const { title, short_description, project_image, project_image_alt, slug, ...rest } = project;
 
     return (
         <article className='project_card'>
@@ -17,7 +17,7 @@ export default function ProjectCard({ project }: ProjectProp): JSX.Element {
 
             <div className="project_card_content-container">
                 <h3 className="project_card_title">{title && title || 'Project Title'}</h3>
-                <p className="project_card_short_desc">{short_des && short_des || 'short description'}</p>
+                <p className="project_card_short_desc">{short_description && short_description || 'short description'}</p>
                 <ProjectLink text="Learn More" href={`/projects/${slug}`} cssClass="project_card_link link" />
             </div>
 
