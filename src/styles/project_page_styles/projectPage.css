@@ -1,0 +1,97 @@
+/* Project Page Heading and Image */
+.project_conatiner,
+.project_container-head,
+.project_container-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.project_container-head {
+    margin-bottom: 1rem;
+}
+
+.heading_title,
+.heading_content {
+    text-align: center;
+}
+
+
+/* Project Image  and links container*/
+.project_image_link_container {
+    width: 100%;
+    height: auto;
+}
+
+.project_image {
+    width: 100%;
+    height: auto;
+    border-radius: 0.1875rem;
+    -webkit-border-radius: 0.1875rem;
+    -moz-border-radius: 0.1875rem;
+    -ms-border-radius: 0.1875rem;
+    -o-border-radius: 0.1875rem;
+}
+
+.project_links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5rem;
+    width: fit-content;
+    margin: 1rem auto 0;
+    background-color: var(--primary-color-border);
+    padding: 0.5rem 1rem;
+    border-radius: 0.1875rem;
+    -webkit-border-radius: 0.1875rem;
+    -moz-border-radius: 0.1875rem;
+    -ms-border-radius: 0.1875rem;
+    -o-border-radius: 0.1875rem;
+}
+
+.project_links a svg {
+    width: 3rem;
+    height: 2rem;
+}
+
+.project_links a:active,
+.project_links a:hover {
+    transform: scale(1.1);
+    color: var(--primary-color);
+}
+
+/* Project Page Body */
+.project_container-body {
+
+    width: 100%;
+    margin: 1rem auto;
+    border-radius: 0.625rem;
+    -webkit-border-radius: 0.625rem;
+    -moz-border-radius: 0.625rem;
+    -ms-border-radius: 0.625rem;
+    -o-border-radius: 0.625rem;
+}
+
+.project_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.625rem;
+    background-color: var(--primary-color-border);
+    -webkit-border-radius: 0.625rem;
+    -moz-border-radius: 0.625rem;
+    -ms-border-radius: 0.625rem;
+    -o-border-radius: 0.625rem;
+}
+
+.content_list {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    width: 100%;
+}
