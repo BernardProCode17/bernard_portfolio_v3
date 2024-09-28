@@ -11,5 +11,6 @@
 @import './home_page_styles//homeprojects.css';
 @import './home_page_styles//homeskills.css';
 @import './home_page_styles/homeabout.css';
-@import './project_page_styles/project_display.css';
-@import './project_page_styles/project_card.css';
+@import './projects_page_styles/project_display.css';
+@import './projects_page_styles/project_card.css';
+@import './project_page_styles/projectPage.css';
