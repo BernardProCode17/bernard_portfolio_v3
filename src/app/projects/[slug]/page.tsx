@@ -8,6 +8,7 @@ import { Key } from 'react';
 import HeadingSection from '@/components/minor components/HeadingSection';
 import ProjectLink from '@/components/minor components/Link';
 import ContentArticle from '@/components/project_page-component/ContentArticle';
+import Connection from '@/components/minor components/Connection';
 
 
 export default async function Project({ params }: { params: { slug: string } }) {
@@ -15,9 +16,9 @@ export default async function Project({ params }: { params: { slug: string } }) 
 
     const projectFetchParams = await client.fetch(fetchProjectBySlug(params), { params }, { cache: 'no-store' });
     const { title, short_description, long_description, features, challenges_solutions, reflection, project_image, project_image_alt, project_links } = projectFetchParams[0];
-    const contentArray = [long_description, challenges_solutions, reflection];
+    const contentArray = [long_description, features, challenges_solutions, reflection];
+    console.log(projectFetchParams)
 
-   
     const linkSVG = (link: string) => {
         switch (link) {
             case project_links[0]:
@@ -59,8 +60,12 @@ export default async function Project({ params }: { params: { slug: string } }) 
                 {/* Project Article component */}
                 {contentArray.map((content: { title: string, content: string }, index: Key) => (
                     console.log(content),
-                    <ContentArticle key={index} title={content && content.title} content={content.content} />
+                    <ContentArticle key={index} title={content && content.title} content={content && content.content} />
                 ))}
+            </div>
+
+            <div className="project_connection">
+                <Connection/>
             </div>
 
         </main>
