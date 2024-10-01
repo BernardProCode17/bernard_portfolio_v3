@@ -1,5 +1,5 @@
 /* Project Page Heading and Image */
-.project_conatiner,
+.project_container,
 .project_container-head,
 .project_container-body {
     display: flex;
@@ -90,8 +90,57 @@
     -o-border-radius: 0.625rem;
 }
 
+@media screen and (min-width: 30rem) {
+    .project_content {
+        width: 90%;
+    }
+
+}
+
+@media screen and (min-width: 48.0625rem) {
+    .project_content {
+        width: 80%;
+    }
+
+}
+
+@media screen and (min-width: 1025px) {
+
+    .project_container {
+        flex-direction: row;
+        column-gap: 5rem;
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+
+    .project_container-head {
+        row-gap: 5rem;
+        margin-top: 5rem;
+    }
+
+    .project_container-body {
+        /* flex-shrink: 2; */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 0rem;
+    }
+
+    .project_content {
+        width: 90%;
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .project_content {   
+        height: 300px;
+    }
+
+}
+
 .content_list {
     display: grid;
     grid-template-columns: 2fr 2fr;
-    width: 100%;
+    width: 70%;
 }

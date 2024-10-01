@@ -37,6 +37,7 @@ export const projectsType = defineType({
             name: 'long_description',
             title: 'Long Description',
             type: 'ArticleContent',
+            description: 'Full descrption of the project, 250 characters max',
         }),
         defineField({
             name: 'feature',
@@ -47,11 +48,13 @@ export const projectsType = defineType({
             name: 'challenges_solutions',
             title: 'Challenges and Solutions',
             type: 'ArticleContent',
+            description: 'Challenges faced and solutions to the challenges, 250 characters max',
         }),
         defineField({
             name: 'reflection',
             title: 'Reflections',
             type: 'ArticleContent',
+            description: 'Self Reflection of working on the project, 250 characters max',
         }),
         defineField({
             name: 'project_image',

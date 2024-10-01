@@ -16,7 +16,6 @@ export default async function Project({ params }: { params: { slug: string } }) 
     const projectFetchParams = await client.fetch(fetchProjectBySlug(params), { params }, { cache: 'no-store' });
     const { title, short_description, long_description, features, challenges_solutions, reflection, project_image, project_image_alt, project_links } = projectFetchParams[0];
     const contentArray = [long_description, features, challenges_solutions, reflection];
-    console.log(projectFetchParams)
 
     const linkSVG = (link: string) => {
         switch (link) {
@@ -37,7 +36,7 @@ export default async function Project({ params }: { params: { slug: string } }) 
 
     return (
         <main>
-            <div className="project_conatiner">
+            <div className="project_container">
 
                 <div className="project_container-head">
                     <HeadingSection cssClass="project_heading">
@@ -65,11 +64,11 @@ export default async function Project({ params }: { params: { slug: string } }) 
                     ))}
                 </div>
 
+            </div>
+
                 <div className="project_connection">
                     <Connection />
                 </div>
-            </div>
-
         </main>
     )
 };

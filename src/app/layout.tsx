@@ -3,6 +3,8 @@ import "../styles/globals.css";
 import Header from "@/components/header_footer/Header";
 import VOTD from "@/components/VOTD/VOTD";
 import Footer from "@/components/header_footer/Footer";
+import { Suspense } from "react";
+import Loading from "./loading";
 
 export const metadata: Metadata = {
   title: "Bernard Clarke | Front-end Javascript React developer",
@@ -17,8 +19,10 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
 
       <body className="body">
         <Header />
-        <VOTD/>
-        {children}
+        <VOTD />
+        <Suspense fallback={<Loading/>}>
+          {children}
+        </Suspense>
         <Footer />
       </body>
 
