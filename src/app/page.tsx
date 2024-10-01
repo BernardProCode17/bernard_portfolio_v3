@@ -10,22 +10,22 @@ export default function Home() {
         <main>
 
             {/* Home Page Banner Section */}
-            <HomePageBanner/>
+            <HomePageBanner />
 
             {/*  Brief Statement Section*/}
-            <BriefStatement/>
+            <BriefStatement />
 
             {/* Projects Section */}
-            <HomePageProjects/>
+            <HomePageProjects />
 
             {/* Skills Section */}
-            <HomePageSkills/>
+            <HomePageSkills />
 
             {/* skills section span border */}
             <span className="home_skills-span"></span>
 
             {/* About Section */}
-            <HomeAbout/>
+            <HomeAbout />
         </main>
     );
 }

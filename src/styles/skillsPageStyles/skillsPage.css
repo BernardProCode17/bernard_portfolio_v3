@@ -1,0 +1,34 @@
+.skills_page-heading {
+    margin-bottom: 3rem;
+}
+
+.skills_page-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.link_indicator {
+    text-align: center;
+    margin: 0.5rem auto;
+    border-bottom: 2px solid var(--primary-color-border);
+}
+
+.skills_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(6.25rem, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: var(--tertiary-color);
+    width: 100%;
+    height: auto;
+    border-radius: 0.625rem;
+    -webkit-border-radius: 0.625rem;
+    -moz-border-radius: 0.625rem;
+    -ms-border-radius: 0.625rem;
+    -o-border-radius: 0.625rem;
+}
