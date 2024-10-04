@@ -9,7 +9,6 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-
 }
 
 .link_indicator {
@@ -21,6 +20,8 @@
 .skills_container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(6.25rem, 1fr));
+    justify-content: space-evenly;
+    align-content: center;
     gap: 1rem;
     padding: 1rem;
     margin: 1rem;
@@ -33,3 +34,4 @@
     -ms-border-radius: 0.625rem;
     -o-border-radius: 0.625rem;
 }
+

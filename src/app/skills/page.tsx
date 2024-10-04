@@ -22,7 +22,6 @@ export default async function Skills() {
                 <h2>Developmental Skills</h2>
 
                 <span className='link_indicator'>Click the card to view more information</span>
-
                 <div className="skills_container">
 
                     {fetchResult.map((skill: SkillTypes, index: any) => (

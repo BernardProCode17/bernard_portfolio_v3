@@ -5,7 +5,7 @@
   align-items: center;
   width: 100%;
   height: auto;
-  /* padding: 1rem; */
+  /* padding: 0.5rem; */
   border: 0.125rem solid var(--primary-color-border);
   border-radius: 10px;
   background-color: var(--secondary-color);

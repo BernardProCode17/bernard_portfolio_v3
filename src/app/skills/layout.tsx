@@ -1,6 +1,5 @@
 import HeadingSection from "@/components/minor components/HeadingSection";
 import Connection from '@/components/minor components/Connection';
-import BackButton from "@/components/minor components/BackButton";
 
 export default function Skilllayout({ children }: Readonly<{ children: React.ReactNode; }>) {
 
@@ -9,9 +8,8 @@ export default function Skilllayout({ children }: Readonly<{ children: React.Rea
             <HeadingSection cssClass="skills_page-heading">
                 <h1>Skills</h1>
                 <p>Technical, Communication and team Work are skills I showcase</p>
-            </HeadingSection>            
+            </HeadingSection>
 
-            <BackButton cssclass={'skill_page_back_button'}/>
             {children}
             
             {/* Connection */}
