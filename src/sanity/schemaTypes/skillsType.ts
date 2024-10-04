@@ -1,5 +1,6 @@
 import { defineField, defineType } from "sanity";
 import { featuretype, skillFilters } from "./schemaTypesDefine";
+import { inlineSvg } from "./schemaTypesDefine/inlineSVG";
 import {SparklesIcon} from '@sanity/icons'
 
 export const skillsType = defineType({
@@ -42,13 +43,13 @@ export const skillsType = defineType({
         defineField({
             name: 'skill_image',
             title: 'Skill Image',
-            type: 'file',
+            type: 'image',
             fields: [
                 defineField({
                     name: 'alt',
                     title: 'Alternative Text',
                     type: 'string',
-                })
+                }),
             ]
         }),
     ]

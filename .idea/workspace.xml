@@ -5,10 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f59ed1ef-aabb-4eae-b75f-2592f34c0098" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/app/[slug]/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sanity.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sanity.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/projects/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/projects/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/project_page_component/project_card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/project_page_component/project_card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/skills/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/skills/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/skillsPage/skillCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/skillsPage/skillCard.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/functions/fetchFunctions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/functions/fetchFunctions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sanity/schemaTypes/skillsType.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/sanity/schemaTypes/skillsType.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +65,7 @@
       <map>
         <entry key="com.intellij.reactbuddy.reactComponents" value="false" />
         <entry key="com.intellij.reactbuddy.reactInspector" value="false" />
+        <entry key="com.intellij.reactbuddy.storybook" value="false" />
       </map>
     </option>
   </component>
@@ -81,6 +87,8 @@
       <workItem from="1727301286126" duration="1124000" />
       <workItem from="1727306165499" duration="1000" />
       <workItem from="1727390186989" duration="1000" />
+      <workItem from="1728067284057" duration="2000" />
+      <workItem from="1728068395214" duration="26000" />
     </task>
     <servers />
   </component>

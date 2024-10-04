@@ -9,7 +9,7 @@ import { Key } from "react";
 export default async function Project() {
 
     const option: { cache: string } = { cache: 'no-store' };
-    const projectsResults: ProjectCardProps = await client.fetch(fetchProjectQuery, {}, option);
+    const projectsResults: ProjectCardProps[] = await client.fetch(fetchProjectQuery, {}, option);
     
 
     return (

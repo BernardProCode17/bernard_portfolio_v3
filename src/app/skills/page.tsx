@@ -1,19 +1,23 @@
-import HeadingSection from "@/components/minor components/HeadingSection";
+import { client } from '@/sanity/lib/client';
 import Link from 'next/link';
-import Connection from '@/components/minor components/Connection';
+import { fetchSkillsQuery } from "@/functions/fetchFunctions";
 import SkillCard from '@/components/skillsPage/skillCard';
+import { SkillTypes } from '@/types/skillTypes';
 
-export default function Skills() {
+export default async function Skills() {
+
+    // fetch function
+
+
+    const option: { cache: RequestCache } = { cache: 'no-store' };
+    const fetchResult: any = await client.fetch(fetchSkillsQuery, {}, option);
+
+
+    console.log(fetchResult)
 
     return (
-        <main>
-            <HeadingSection cssClass="skills_page-heading">
-                <h1>Skills</h1>
-                <p>Technical, Communication and Collabrative skills</p>
-            </HeadingSection>
-
+        <>
             {/* Filter button for different skills  */}
-
             <section className="skills_page-body">
                 <h2>Developmental Skills</h2>
 
@@ -21,18 +25,15 @@ export default function Skills() {
 
                 <div className="skills_container">
 
-                    {/* Map over the skills to display the cards */}
-
-                    <Link href={`/skills/skill`}>
-                    <SkillCard />
-                    </Link>
+                    {fetchResult.map((skill: SkillTypes, index: any) => (
+                        <Link key={index} href={`/skills/${skill.slug}`}>
+                            <SkillCard skill={skill} />
+                        </Link>
+                    ))}
 
                 </div>
             </section>
 
-            {/* Connection */}
-            <Connection/>
-
-        </main>
+        </>
     )
 }

@@ -1,3 +1,5 @@
+
+
 export const fetchProjectQuery: string = `*[_type == 'projects'] {
   title,
   'slug':slug.current,
@@ -22,4 +24,25 @@ export const fetchProjectBySlug = (params: { slug: string }): string => `*[_type
   'project_image': project_image.asset._ref,
   'project_image_alt': project_image.alt,
   project_links
+}`
+
+export const fetchSkillsQuery: string = `*[_type == 'skills']
+{
+  title,
+  skill_description,
+  'slug': slug.current,
+  'features': {'title': feature.title, 'content': feature.content},
+  skill_filters[0],
+  'skill_image': {'image':skill_image.asset._ref,'alt': skill_image.alt}
+}`
+
+
+
+export const fetchSkillBySlug = (params: { slug: string }): string => `*[_type == 'skills' && slug.current == '${params.slug}']{
+  title,
+  skill_description,
+  'slug': slug.current,
+  'features': {'title': feature.title, 'content': feature.content},
+  skill_filters[0],
+  'skill_image': {'image':skill_image.asset._ref,'alt': skill_image.alt}
 }`
