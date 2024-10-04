@@ -104,3 +104,19 @@ export function DevelopmentToolsLottie() {
       </div>
    )
 }
+
+export function SkillImageLottie(lottieFile: object) {
+
+   const options = {
+      loop: true,
+      autoplay: true,
+      animationData: lottieFile,
+      renderSettings: { preserveAspectRatio: 'xMidYMIs slice' }
+   }
+
+   return (
+      <div className="skill_image">
+         <Lottie options={options} width={200}/>
+      </div>
+   )
+}

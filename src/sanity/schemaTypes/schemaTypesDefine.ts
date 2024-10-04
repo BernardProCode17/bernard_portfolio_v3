@@ -33,4 +33,21 @@ export const featuretype = defineType({
             of: [{ type: 'string' }],
         }),
     ],
-})
+});
+
+export const skillFilters = defineType({
+    name: 'skillFilters',
+    type: 'array',
+    of: [{
+        type: 'string',
+        options: {
+            list: [
+                { title: 'Developmental', value: 'developmental' },
+                { title: 'Design', value: 'design' },
+                { title: 'Tools', value: 'tools' },
+                { title: 'Communication', value: 'communication' },
+                { title: 'Collaboration', value: 'Collaboration' },
+            ],
+        },
+    }],
+});

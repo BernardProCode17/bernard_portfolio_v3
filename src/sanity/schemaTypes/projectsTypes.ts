@@ -1,5 +1,6 @@
 import { defineField, defineType } from "sanity";
-import { ArticleContent, featuretype} from "./ArticleContent";
+import { ArticleContent, featuretype} from "./schemaTypesDefine";
+import {ProjectsIcon} from '@sanity/icons'
 
 const urlValidation = (Rule: any) => Rule.uri({
     scheme: ['http', 'https'],
@@ -11,6 +12,7 @@ export const projectsType = defineType({
     name: 'projects',
     title: 'Projects',
     type: 'document',
+    icon: ProjectsIcon,
     fields: [
         defineField({
             name: 'title',

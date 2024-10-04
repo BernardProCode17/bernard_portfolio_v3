@@ -1,8 +1,7 @@
-import Image from 'next/image';
 import HeadingSection from "@/components/minor components/HeadingSection";
-import mobileLogo from '@/assets/logo_mobile.svg'
 import Link from 'next/link';
 import Connection from '@/components/minor components/Connection';
+import SkillCard from '@/components/skillsPage/skillCard';
 
 export default function Skills() {
 
@@ -25,24 +24,7 @@ export default function Skills() {
                     {/* Map over the skills to display the cards */}
 
                     <Link href={`/skills/skill`}>
-                        <div className="skill_card">
-                            <Image src={mobileLogo} alt='placeholder' width={100} height={100} />
-                            <h3>HTML</h3>
-                        </div>
-                    </Link>
-
-                    <Link href={`/skills/skill`}>
-                        <div className="skill_card">
-                            <Image src={mobileLogo} alt='placeholder' width={100} height={100} />
-                            <h3>HTML</h3>
-                        </div>
-                    </Link>
-
-                    <Link href={`/skills/skill`}>
-                        <div className="skill_card">
-                            <Image src={mobileLogo} alt='placeholder' width={100} height={100} />
-                            <h3>HTML</h3>
-                        </div>
+                    <SkillCard />
                     </Link>
 
                 </div>
