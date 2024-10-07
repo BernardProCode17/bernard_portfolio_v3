@@ -1,6 +1,5 @@
 import { defineField, defineType } from "sanity";
 import { featuretype, skillFilters } from "./schemaTypesDefine";
-import { inlineSvg } from "./schemaTypesDefine/inlineSVG";
 import {SparklesIcon} from '@sanity/icons'
 
 export const skillsType = defineType({

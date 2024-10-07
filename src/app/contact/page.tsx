@@ -1,13 +1,10 @@
+import Connection from "@/components/minor components/Connection";
 import HeadingSection from "@/components/minor components/HeadingSection";
 
 export default function Contact() {
 
     return (
-        <main>
-            <HeadingSection cssClass="contact_page-heading">
-                <h1 className="contact_page-title">Contact</h1>
-                <p className="contact_page-statement">Contact To Work Together</p>
-            </HeadingSection>
+        <div className="contact_page-body">
 
             {/* Form Div */}
             <div className="contact_form_div">
@@ -43,7 +40,8 @@ export default function Contact() {
                     {/* Message */}
                     <div className="form_groups">
                         <label htmlFor="message" className="form_group_label"></label>
-                        <input className="form-group_input" type="textarea" name="message" id="message" placeholder="Your Message" required />
+                        <textarea name="message" id="message" required className="form-group_input input_message" placeholder="message"></textarea>
+                        {/* <input className="form-group_input input_message" type="text" name="message" id="message" placeholder="Your Message" required /> */}
                     </div>
 
                     {/* Send*/}
@@ -54,7 +52,8 @@ export default function Contact() {
                 </form>
             </div>
 
-
-        </main>
+            {/* connection */}
+            <Connection />
+        </div>
     )
 }
