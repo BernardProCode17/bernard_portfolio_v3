@@ -6,14 +6,8 @@ import { SkillTypes } from '@/types/skillTypes';
 
 export default async function Skills() {
 
-    // fetch function
-
-
     const option: { cache: RequestCache } = { cache: 'no-store' };
     const fetchResult: any = await client.fetch(fetchSkillsQuery, {}, option);
-
-
-    console.log(fetchResult)
 
     return (
         <>

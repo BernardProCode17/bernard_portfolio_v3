@@ -11,6 +11,7 @@ export default async function SkillPage({ params }: { params: { slug: string } }
     const { title, skill_description, features, skill_image, ...rest } = projectFetchParams[0];
 
     const imageUrl = skill_image?.image ? urlFor(skill_image.image).url() : '';
+    
     return (
         <section className="section skill_page_body">
 
