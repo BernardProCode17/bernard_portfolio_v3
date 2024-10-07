@@ -29,7 +29,7 @@ export default async function Project() {
             </div>
 
             {/* Social Connection */}
-            <Connection />
+            <Connection linkClass='project_social_link'/>
         </main>
     )
 };

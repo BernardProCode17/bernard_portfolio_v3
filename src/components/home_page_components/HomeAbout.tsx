@@ -17,7 +17,7 @@ export default function HomeAbout() {
                         Clarke, a Front-End Web
                         Developer graduated from <abbr title="British Columbia Institute of Technology">BCIT.</abbr></p>
                     <p className="home_about_text">I focus on JavaScript and the React ecosystem. I enjoy programming
-                        and learning new programming <b>Things</b>, and building project. </p>
+                        and learning new programming <b>Things</b>, and building projects. </p>
                     <ProjectLink text={text} href={'/about'} cssClass={"home_about_text-em"}/>
 
                 </div>
@@ -31,7 +31,7 @@ export default function HomeAbout() {
                              subtitle="Front-End Web Developer"/>
 
                     {/* Social Connections and Contact Button */}
-                    <SocialConnections />
+                    <SocialConnections divClass1="social_connection_container" divClass2="social_connection" linkClass='home_about_social-links'/>
                     <ProjectLink href={"/contact"} cssClass={"home_about_button link"} text="Contact"/>
                 </div>
             </div>

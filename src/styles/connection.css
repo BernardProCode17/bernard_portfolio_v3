@@ -15,7 +15,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  border-bottom: 5px solid var(--tertiary-color);
+  /* border-bottom: 5px solid var(--tertiary-color); */
   width: 100%;
 }
 
@@ -31,5 +31,4 @@
   width: 35px;
   height: auto;
   margin: 0 0.5rem;
-  fill: var(--secondary-color);
 }
