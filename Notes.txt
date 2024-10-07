@@ -1,1 +1,7 @@
-add privacy ploies card 
+add privacy ploies card
+
+add google analytics to the site with a heatmap
+
+refactor styles
+
+add page content to sanity
