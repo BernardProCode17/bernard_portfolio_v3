@@ -1,5 +1,4 @@
 import Connection from "@/components/minor components/Connection";
-import HeadingSection from "@/components/minor components/HeadingSection";
 
 export default function Contact() {
 
@@ -8,8 +7,9 @@ export default function Contact() {
 
             {/* Form Div */}
             <div className="contact_form_div">
-                {/* Name */}
                 <form className="contact_form">
+
+                    {/* Name */}
                     <div className="form_groups">
                         <label htmlFor="name" className="form_group_label"></label>
                         <input className="form-group_input" type="text" name="name" id="name" placeholder="Your Name" required />
@@ -40,15 +40,15 @@ export default function Contact() {
                     {/* Message */}
                     <div className="form_groups">
                         <label htmlFor="message" className="form_group_label"></label>
-                        <textarea name="message" id="message" required className="form-group_input input_message" placeholder="message"></textarea>
-                        {/* <input className="form-group_input input_message" type="text" name="message" id="message" placeholder="Your Message" required /> */}
+                        <textarea name="message" id="message" required className="form-group_input input_message" placeholder="Message"></textarea>
                     </div>
 
                     {/* Send*/}
                     <div className="form_groups">
                         <label htmlFor="send" className="form_group_label"></label>
-                        <input className="form-group_input link" type="submit" name="send" id="send" value='Send' />
+                        <input className="form-group_input sendButton" type="submit" name="send" id="send" value='Send' />
                     </div>
+
                 </form>
             </div>
 

@@ -1,9 +1,9 @@
 .connection {
   border: 0.125rem solid var(--primary-color-border);
   border-radius: 0.625rem;
-  /* row-gap: 0.3rem; */
   width: 100%;
   max-width:  48.125rem;
+  
 }
 
 .connection_content {
@@ -15,6 +15,8 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  border-bottom: 5px solid var(--tertiary-color);
+  width: 100%;
 }
 
 .social_connection {
@@ -29,4 +31,5 @@
   width: 35px;
   height: auto;
   margin: 0 0.5rem;
+  fill: var(--secondary-color);
 }
