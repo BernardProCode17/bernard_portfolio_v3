@@ -1,5 +1,5 @@
 import Link from "next/link";
-import {IoLogoCodepen, IoLogoGithub, IoLogoLinkedin} from "react-icons/io5";
+import {IoLogoCodepen, IoLogoGithub, IoLogoLinkedin,} from "react-icons/io5";
 import {MdOutlineEmail} from "react-icons/md";
 
 type LinkProps = { divClass1?: string, divClass2?: string, linkClass?: String }

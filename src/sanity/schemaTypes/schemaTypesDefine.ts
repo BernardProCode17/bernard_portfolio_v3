@@ -51,3 +51,35 @@ export const skillFilters = defineType({
         },
     }],
 });
+
+export const PageContentType = defineType({
+    name: 'PageContentType',
+    type: 'object',
+    fields: [
+        defineField({
+            name: 'title',
+            title: 'Title',
+            type: 'string',
+        }),
+        defineField({
+            name: 'content',
+            title: 'Content',
+            type: 'array',
+            of: [
+            {
+                type: 'object',
+                fields: [defineField({
+                    name: 'text',
+                    title: 'Text',
+                    type: 'string',
+                }),
+                defineField({
+                    name: 'subContent',
+                    title: 'Sub Content',
+                    type: 'string'
+                })
+                ]
+            }]
+        }),
+    ],
+});

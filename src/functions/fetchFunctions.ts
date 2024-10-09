@@ -1,4 +1,4 @@
-
+import { client } from '@/sanity/lib/client';
 
 export const fetchProjectQuery: string = `*[_type == 'projects'] {
   title,
@@ -46,3 +46,84 @@ export const fetchSkillBySlug = (params: { slug: string }): string => `*[_type =
   skill_filters[0],
   'skill_image': {'image':skill_image.asset._ref,'alt': skill_image.alt}
 }`
+
+export const fetchPageContent_home: string = `*[_type == 'pageContent' && pageTitle == 'Home Page']{  
+  'bannerSection': {
+    'H1': pageSection[0].content[0].text,
+    'SubTitle': pageSection[0].content[1].text,
+    'Statement': pageSection[0].content[2].text,
+    'Links': [pageSection[0].content[3].text, pageSection[0].content[4].text]
+  },
+  
+  'StatementSection': {
+    'Title': pageSection[1].title,
+    'Content': pageSection[1].content[0].text
+  },
+  
+  'projectSection': {
+    'Title': pageSection[2].title,
+    'Content': pageSection[2].content[0].text,
+    'Link': pageSection[2].content[1].text
+  },
+  
+  'skillSection': {
+    'Section Banner': {
+      'Title': pageSection[3].title,
+      'content': pageSection[3].content[0].text
+    },
+    'Link': pageSection[3].content[1].text,
+    'Filter': [
+      {
+        'title': pageSection[3].content[2].text,
+        'Content': pageSection[3].content[2].subContent
+      },
+      {
+        'title': pageSection[3].content[3].text,
+        'Content': pageSection[3].content[3].subContent
+      },
+      {
+        'title': pageSection[3].content[4].text,
+        'Content': pageSection[3].content[4].subContent
+      }
+    ]
+  },
+  
+  'aboutSection': {
+    'Title': pageSection[4].title,
+    'Content': pageSection[4].content[].text
+  }
+}
+`
+export const fetchPageContent_projects: string = `*[_type == 'pageContent' && pageTitle == 'Projects Page']
+{
+  'pageSection': {'Title': pageSection[0].title, 'content':pageSection[0].content[0].text}
+}`
+
+export const fetchPageContent_skill: string = `*[_type == 'pageContent' && pageTitle == 'Skills Page']
+{
+  'Banner Section': {'Skills': pageSection[0].content[0].text, 'SubContent':pageSection[0].content[0].subContent},
+  'Filter Section': [pageSection[1].content[].text],
+  'UX Indicator': pageSection[2].content[0].text
+}`
+
+export const fetchPageContent_about: string = `*[_type == 'pageContent' && pageTitle == 'About Page']
+{
+  'profile':{'name':pageSection[0].content[0].text, 'Content': pageSection[0].content[1]},
+  'About Me': {'name': pageSection[1].title, 'Content': pageSection[1].content[0].text},
+  'Interest': {'name': pageSection[2].title, 'Content': pageSection[2].content[0].text},
+  'Image':{'image_url': image[0].image_url.asset._ref, 'image_alt': image[0].alt}
+}`
+
+export const fetchPageContent_contact: string = `*[_type == 'pageContent' && pageTitle == 'Contact Page']
+{
+  'Page Banner': {'Title': pageSection[0].title, 'Content': pageSection[0].content[0].text}
+}`
+
+
+// fetch function 
+
+export async function pageContentFetchfunction(query: string): Promise<any> {
+  const option: { cache: RequestCache } = { cache: 'no-store' };
+  const pageContent: any = await client.fetch(query, {}, option);
+  return pageContent
+}

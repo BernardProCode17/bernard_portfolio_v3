@@ -5,3 +5,5 @@ add google analytics to the site with a heatmap
 refactor styles
 
 add page content to sanity
+
+add social media links and icons from sanity 
