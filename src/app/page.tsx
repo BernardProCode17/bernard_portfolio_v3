@@ -1,39 +1,36 @@
-'use client'
 import BriefStatement from "@/components/home_page_components/BriefStatment";
 import HomeAbout from "@/components/home_page_components/HomeAbout";
 import HomePageProjects from "@/components/home_page_components/HomePageProjects";
 import HomePageSkills from "@/components/home_page_components/HomePageSkills";
 import HomePageBanner from "@/components/home_page_components/HomePageBanner";
-import { pageContentFetchfunction, fetchPageContent_home } from "@/functions/fetchFunctions";
-
+import { fetchFunction, fetchPageContent_home } from "@/functions/fetchFunctions";
 
 export default async function Home() {
 
-    const homePageContentFetch = await pageContentFetchfunction(fetchPageContent_home)
-    console.table('Home Page Fetch', homePageContentFetch)
+    const homePageContentFetch = await fetchFunction(fetchPageContent_home)
 
-    const [bannerSection, ...rest] = homePageContentFetch[0]
-    console.log(bannerSection)
+    const {bannerSection, StatementSection, projectSection, skillSection, aboutSection} = homePageContentFetch[0]
+
     return (
         <main>
 
             {/* Home Page Banner Section */}
-            <HomePageBanner />
+            <HomePageBanner pageData={bannerSection} />
 
             {/*  Brief Statement Section*/}
-            <BriefStatement />
+            <BriefStatement pageData={StatementSection}/>
 
             {/* Projects Section */}
-            <HomePageProjects />
+            <HomePageProjects pageData={projectSection}/>
 
             {/* Skills Section */}
-            <HomePageSkills />
+            <HomePageSkills pageData={skillSection} />
 
             {/* skills section span border */}
             <span className="home_skills-span"></span>
 
             {/* About Section */}
-            <HomeAbout />
+            <HomeAbout pageData={aboutSection} />
         </main>
     );
 }

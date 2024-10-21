@@ -1,20 +1,27 @@
 import Link from "next/link";
 import PageSections from "../minor components/PageSections";
-import { ProjectsLottie } from "../minor components/lotties/lottie";
+import {ProjectsLottie} from "../minor components/lotties/lottie";
 import HomeProjectsDisplay from "./HomeProjectsDisplay";
 
-export default function HomePageProjects() {
+type PageDataProjects = {
+    Title: string,
+    Content: string,
+    Link: string
+}
+
+
+export default function HomePageProjects({pageData}: { pageData: PageDataProjects }) {
+    const {Title, Content, Link: Links} = pageData
 
     return (
         <PageSections cssClass="home_projects">
-            <h2 className="home_projects-title">Projects</h2>
-            <p className="home_projects-content"> Here you can explore some of the projects I have worked on. Take a look and get inspired!
-            </p>
+            <h2 className="home_projects-title">{Title}</h2>
+            <p className="home_projects-content">{Content}</p>
 
             <ProjectsLottie display='removeLottie'/>
-            <HomeProjectsDisplay />
+            <HomeProjectsDisplay/>
 
-            <Link href='projects' className="link home_project-link">View Projects</Link>
+            <Link href='projects' className="link home_project-link">{Links}</Link>
         </PageSections>
     );
 }

@@ -4,8 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f59ed1ef-aabb-4eae-b75f-2592f34c0098" name="Changes" comment="">
+    <list default="true" id="f59ed1ef-aabb-4eae-b75f-2592f34c0098" name="Changes" comment="refactor pages to add content from CMS, refactor fetching to use one fetching function for both page content and project/skills">
+      <change afterPath="$PROJECT_DIR$/src/app/projects/[slug]/loading.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Notes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/projects/[slug]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/projects/[slug]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/projects/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/projects/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/skills/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/skills/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/skills/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/skills/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home_page_components/BriefStatment.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home_page_components/BriefStatment.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home_page_components/HomeAbout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home_page_components/HomeAbout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home_page_components/HomePageBanner.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home_page_components/HomePageBanner.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home_page_components/HomePageProjects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home_page_components/HomePageProjects.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home_page_components/HomePageSkills.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home_page_components/HomePageSkills.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/minor components/Profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/minor components/Profile.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/functions/fetchFunctions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/functions/fetchFunctions.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,19 +53,20 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\berna\\OneDrive\\Desktop\\bernard_portfolio_v3\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/berna/OneDrive/Desktop/bernard_portfolio_v3/src/app/projects/[slug]",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "ts.external.directory.path": "C:\\Users\\berna\\OneDrive\\Desktop\\bernard_portfolio_v3\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -60,6 +75,11 @@
         <entry key="com.intellij.reactbuddy.storybook" value="false" />
       </map>
     </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\berna\OneDrive\Desktop\bernard_portfolio_v3\src\app\projects\[slug]" />
+    </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -84,10 +104,15 @@
       <workItem from="1728331278386" duration="4000" />
       <workItem from="1728332637656" duration="611000" />
       <workItem from="1728428960581" duration="5000" />
+      <workItem from="1729533787338" duration="12822000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="refactor pages to add content from CMS, refactor fetching to use one fetching function for both page content and project/skills" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor pages to add content from CMS, refactor fetching to use one fetching function for both page content and project/skills" />
   </component>
 </project>

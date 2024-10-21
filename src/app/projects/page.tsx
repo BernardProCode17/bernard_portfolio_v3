@@ -1,5 +1,5 @@
 import { client } from '@/sanity/lib/client';
-import { fetchProjectQuery } from "@/functions/fetchFunctions";
+import {fetchPageContent_projects,fetchFunction, fetchProjectQuery} from "@/functions/fetchFunctions";
 import HeadingSection from "@/components/minor components/HeadingSection";
 import ProjectCard from "@/components/projects_page_component/project_card";
 import Connection from "@/components/minor components/Connection";
@@ -8,16 +8,19 @@ import { Key } from "react";
 
 export default async function Project() {
 
-    const option: { cache: RequestCache } = { cache: 'no-store' };
-    const projectsResults: ProjectCardProps[] = await client.fetch(fetchProjectQuery, {}, option);
-    
+    // Fetching the projects
+    const projectsResults = await fetchFunction(fetchProjectQuery)
+
+    // Fetching the page content
+    const projectsPageContent = await fetchFunction(fetchPageContent_projects)
+    const {Title, content} = projectsPageContent[0].pageSection
 
     return (
         <main>
             <HeadingSection cssClass="projects">
                 <div className="projects_banner">
-                    <h1 className="banner_title">Projects</h1>
-                    <p className="banner_content">Highlighted projects</p>
+                    <h1 className="banner_title">{Title}</h1>
+                    <p className="banner_content">{content}</p>
                 </div>
             </HeadingSection>
 
