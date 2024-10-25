@@ -1,4 +1,6 @@
 'use client'
+
+import React, {useEffect, useState} from 'react';
 import Lottie from 'react-lottie'
 import Jslottie from '../../../assets/javascript_lottie.json'
 import projectsLottie from '../../../assets/project_folder_lottie.json'
@@ -7,116 +9,191 @@ import developmentSkills from '../../../assets/development_skills_lottie.json'
 import communicationSkills from '../../../assets/communication_skill_lottie.json'
 import developmentTools from '../../../assets/developement_tools_skills_lottie.json'
 
-type LottieProps = {
-   display: string
-}
+type LottieProps = { display: string }
+const clientDocument = typeof window !== 'undefined'
+
 export function JSLottie() {
+    const [isClient, setIsClient] = useState(false);
 
-   const options = {
-      loop: true,
-      autoplay: true,
-      animationData: Jslottie,
-      renderSettings: { preserveAspectRatio: 'xMidYMIs slice' }
-   }
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            setIsClient(true);
+        }
+    }, []);
 
-   return (
-      <div className="home_header-lottie">
-         <Lottie options={options} width={'100%'} isClickToPauseDisabled={true} />
-      </div>
-   )
+    const options = {
+        loop: true,
+        autoplay: true,
+        animationData: Jslottie,
+        renderSettings: {preserveAspectRatio: 'xMidYMid slice'}
+    };
+
+    return (
+        <div className="home_header-lottie">
+            {isClient && (
+                <Lottie
+                    options={options}
+                    width={'100%'}
+                    isClickToPauseDisabled={true}
+                />
+            )}
+        </div>
+    );
 }
 
-export function ProjectsLottie({ display }: LottieProps) {
-   const options = {
-      loop: true,
-      autoplay: true,
-      animationData: projectsLottie,
-      renderSettings: { preserveAspectRatio: 'xMidYMIs slice' }
-   }
 
-   return (
-      <div className={`home_projects-lottie ${display}`}>
-         <Lottie options={options} width={'100%'} isClickToPauseDisabled={true} />
-      </div>
-   )
+// export function JSLottie() {
+//
+//    const options = {
+//       loop: true,
+//       autoplay: true,
+//       animationData: Jslottie,
+//       renderSettings: { preserveAspectRatio: 'xMidYMIs slice' }
+//    }
+//
+//    return (
+//       <div className="home_header-lottie">
+//          clientDocument && <Lottie options={options} width={'100%'} isClickToPauseDisabled={true} />
+//       </div>
+//    )
+// }
+
+export function ProjectsLottie({display}: LottieProps) {
+
+    const [isClient, setIsClient] = useState(false);
+
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            setIsClient(true);
+        }
+    }, []);
+    const options = {
+        loop: true,
+        autoplay: true,
+        animationData: projectsLottie,
+        renderSettings: {preserveAspectRatio: 'xMidYMIs slice'}
+    }
+
+    return (
+        <div className={`home_projects-lottie ${display}`}>
+            {isClient && <Lottie options={options} width={'100%'} isClickToPauseDisabled={true}/>}
+        </div>
+    )
 }
 
 export function SkillsLottie() {
 
-   const options = {
-      loop: true,
-      autoplay: true,
-      animationData: skillLottie,
-      renderSettings: { preserveAspectRatio: 'xMidYMIs slice' }
-   }
+    const [isClient, setIsClient] = useState(false);
 
-   return (
-      <div className="home_skills-lottie">
-         <Lottie options={options} width={200} isClickToPauseDisabled={true} />
-      </div>
-   )
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            setIsClient(true);
+        }
+    }, []);
+    const options = {
+        loop: true,
+        autoplay: true,
+        animationData: skillLottie,
+        renderSettings: {preserveAspectRatio: 'xMidYMIs slice'}
+    }
+
+    return (
+        <div className="home_skills-lottie">
+            {isClient && clientDocument && <Lottie options={options} width={200} isClickToPauseDisabled={true}/>}
+        </div>
+    )
 }
 
 export function DevelopmentSkillsLottie() {
 
-   const options = {
-      loop: true,
-      autoplay: true,
-      animationData: developmentSkills,
-      renderSettings: { preserveAspectRatio: 'xMidYMIs slice' }
-   }
+    const [isClient, setIsClient] = useState(false);
 
-   return (
-      <div className="home_skills-lottie home_skills_lottie-display">
-         <Lottie options={options} width={200} isClickToPauseDisabled={true} />
-      </div>
-   )
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            setIsClient(true);
+        }
+    }, []);
+
+    const options = {
+        loop: true,
+        autoplay: true,
+        animationData: developmentSkills,
+        renderSettings: {preserveAspectRatio: 'xMidYMIs slice'}
+    }
+
+    return (
+        <div className="home_skills-lottie home_skills_lottie-display">
+            {isClient && clientDocument && <Lottie options={options} width={200} isClickToPauseDisabled={true}/>}
+        </div>
+    )
 }
 
 export function CommunicationSkillsLottie() {
+    const [isClient, setIsClient] = useState(false);
 
-   const options = {
-      loop: true,
-      autoplay: true,
-      animationData: communicationSkills,
-      renderSettings: { preserveAspectRatio: 'xMidYMIs slice' }
-   }
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            setIsClient(true);
+        }
+    }, []);
+    const options = {
+        loop: true,
+        autoplay: true,
+        animationData: communicationSkills,
+        renderSettings: {preserveAspectRatio: 'xMidYMIs slice'}
+    }
 
-   return (
-      <div className="home_skills-lottie home_skills_lottie-display">
-         <Lottie options={options} width={200} isClickToPauseDisabled={true} />
-      </div>
-   )
+    return (
+        <div className="home_skills-lottie home_skills_lottie-display">
+            {isClient && clientDocument && <Lottie options={options} width={200} isClickToPauseDisabled={true}/>}
+        </div>
+    )
 }
 
 export function DevelopmentToolsLottie() {
 
-   const options = {
-      loop: true,
-      autoplay: true,
-      animationData: developmentTools,
-      renderSettings: { preserveAspectRatio: 'xMidYMIs slice' }
-   }
+    const [isClient, setIsClient] = useState(false);
 
-   return (
-      <div className="home_skills-lottie home_skills_lottie-display">
-         <Lottie options={options} width={200}/>
-      </div>
-   )
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            setIsClient(true);
+        }
+    }, []);
+
+    const options = {
+        loop: true,
+        autoplay: true,
+        animationData: developmentTools,
+        renderSettings: {preserveAspectRatio: 'xMidYMIs slice'}
+    }
+
+    return (
+        <div className="home_skills-lottie home_skills_lottie-display">
+            {isClient && clientDocument && <Lottie options={options} width={200}/>}
+        </div>
+    )
 }
 
 export function SkillImageLottie(lottieFile: object) {
 
-   const options = {
-      loop: true,
-      autoplay: true,
-      animationData: lottieFile,
-      renderSettings: { preserveAspectRatio: 'xMidYMIs slice' }
-   }
+    const [isClient, setIsClient] = useState(false);
 
-   return (
-      <div className="skill_image">
-         <Lottie options={options} width={200}/>
-      </div>
-   )
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            setIsClient(true);
+        }
+    }, []);
+
+    const options = {
+        loop: true,
+        autoplay: true,
+        animationData: lottieFile,
+        renderSettings: {preserveAspectRatio: 'xMidYMIs slice'}
+    }
+
+    return (
+        <div className="skill_image">
+            {isClient && clientDocument && <Lottie options={options} width={200}/>}
+        </div>
+    )
 }

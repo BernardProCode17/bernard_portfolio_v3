@@ -1,4 +1,10 @@
 import Connection from "@/components/minor components/Connection";
+import {Metadata} from "next/types";
+
+export const metadata: Metadata = {
+    title: "Contact | Bernard Clarke | Front-end Javascript React developer",
+    description: "Get in touch with Bernard Clarke, a front-end JavaScript React developer based in Vancouver, BC. Reach out for inquiries, collaborations, or to learn more about his expertise in creating responsive and accessible web applications."
+}
 
 export default async function Contact() {
 
@@ -52,7 +58,8 @@ export default async function Contact() {
                     {/* Send*/}
                     <div className="form_groups">
                         <label htmlFor="send" className="form_group_label"></label>
-                        <input className="form-group_input sendButton" type="submit" name="send" id="send" value='Send'/>
+                        <input className="form-group_input sendButton" type="submit" name="send" id="send"
+                               value='Send'/>
                     </div>
 
                 </form>

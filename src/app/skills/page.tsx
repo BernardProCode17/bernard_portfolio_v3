@@ -2,10 +2,17 @@ import Link from 'next/link';
 import {fetchFunction, fetchPageContent_skill, fetchSkillsQuery} from "@/functions/fetchFunctions";
 import SkillCard from '@/components/skillsPage/skillCard';
 import {SkillTypes} from '@/types/skillTypes';
+import {Metadata} from "next/types";
+
+export const metadata:Metadata = {
+    title: "Skills | Bernard Clarke | Front-end Javascript React developer",
+    description: "Discover the diverse skill set of Bernard Clarke, a front-end JavaScript React developer based in Vancouver, BC. Explore expertise in React, TypeScript, Next.js, and more. Learn how these skills contribute to creating responsive and accessible web applications.",
+}
 
 export default async function Skills() {
 
     type fetchResultType = {
+        [x: string]: any;
         title: string,
         content: string
     }

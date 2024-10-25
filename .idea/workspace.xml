@@ -4,16 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f59ed1ef-aabb-4eae-b75f-2592f34c0098" name="Changes" comment="refactor pages to add content from CMS, refactor fetching to use one fetching function for both page content and project/skills">
+    <list default="true" id="f59ed1ef-aabb-4eae-b75f-2592f34c0098" name="Changes" comment="refactor pages to add content from CMS, refactor fetching to use one fetching function for both page content and project/skills, completed site, working on bugfix and styles">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.mjs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/about/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/about/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/contact/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/contact/layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/contact/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/contact/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/projects/[slug]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/projects/[slug]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/projects/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/projects/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/skills/[slug]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/skills/[slug]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/functions/fetchFunctions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/functions/fetchFunctions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/skills/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/skills/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/minor components/lotties/lottie.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/minor components/lotties/lottie.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +101,7 @@
       <workItem from="1728332637656" duration="611000" />
       <workItem from="1728428960581" duration="5000" />
       <workItem from="1729533787338" duration="12908000" />
-      <workItem from="1729880907803" duration="3204000" />
+      <workItem from="1729880907803" duration="8715000" />
     </task>
     <task id="LOCAL-00001" summary="refactor pages to add content from CMS, refactor fetching to use one fetching function for both page content and project/skills">
       <option name="closed" value="true" />
@@ -109,7 +111,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729547326638</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="refactor pages to add content from CMS, refactor fetching to use one fetching function for both page content and project/skills, completed site, working on bugfix and styles">
+      <option name="closed" value="true" />
+      <created>1729884427596</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1729884427596</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,6 +127,19 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="refactor pages to add content from CMS, refactor fetching to use one fetching function for both page content and project/skills" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor pages to add content from CMS, refactor fetching to use one fetching function for both page content and project/skills" />
+    <MESSAGE value="refactor pages to add content from CMS, refactor fetching to use one fetching function for both page content and project/skills, completed site, working on bugfix and styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor pages to add content from CMS, refactor fetching to use one fetching function for both page content and project/skills, completed site, working on bugfix and styles" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/projects/[slug]/page.tsx</url>
+          <line>44</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

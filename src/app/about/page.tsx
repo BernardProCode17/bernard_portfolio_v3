@@ -3,6 +3,12 @@ import {urlFor} from "@/sanity/lib/image";
 import {fetchPageContent_about, fetchFunction} from "@/functions/fetchFunctions";
 import HeadingSection from "@/components/minor components/HeadingSection";
 import Connection from '@/components/minor components/Connection';
+import {Metadata} from "next/types";
+
+export const metadata:Metadata={
+    title:"About | Bernard Clarke | Front-end Javascript React developer",
+    description: 'Learn more about Bernard Clarke, a front-end JavaScript React developer based in Vancouver, BC. Discover his background, interests, and expertise in creating responsive and accessible web applications.'
+}
 
 export default async function About() {
 
@@ -44,6 +50,5 @@ export default async function About() {
             {/* Connection */}
             <Connection />
         </main>
-
     )
 }
