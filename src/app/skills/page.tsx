@@ -28,7 +28,6 @@ export default async function Skills() {
         <>
             {/* Filter button for different skills  */}
             <section className="skills_page-body">
-                <h2>Developmental Skills</h2>
 
                 <span className='link_indicator'>{UXIndicator}</span>
                 <div className="skills_container">

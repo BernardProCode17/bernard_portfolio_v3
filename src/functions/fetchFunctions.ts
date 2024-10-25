@@ -1,5 +1,11 @@
 import {client} from '@/sanity/lib/client';
 
+export async function fetchFunction(query: string): Promise<any> {
+    const option: { cache: RequestCache } = {cache: 'no-store'};
+    const pageContent: any = await client.fetch(query, {}, option);
+    return pageContent
+}
+
 export const fetchProjectQuery: string = `*[_type == 'projects'] {
   title,
   'slug':slug.current,
@@ -28,6 +34,7 @@ export const fetchProjectBySlug = (params: {
   project_links
 }`
 
+
 export const fetchSkillsQuery: string = `*[_type == 'skills']
 {
   title,
@@ -37,7 +44,6 @@ export const fetchSkillsQuery: string = `*[_type == 'skills']
   skill_filters[0],
   'skill_image': {'image':skill_image.asset._ref,'alt': skill_image.alt}
 }`
-
 
 export const fetchSkillBySlug = (params: {
     slug: string
@@ -49,7 +55,6 @@ export const fetchSkillBySlug = (params: {
   skill_filters[0],
   'skill_image': {'image':skill_image.asset._ref,'alt': skill_image.alt}
 }`
-
 export const fetchPageContent_home: string = `*[_type == 'pageContent' && pageTitle == 'Home Page']{  
   'bannerSection': {
     'H1': pageSection[0].content[0].text,
@@ -97,6 +102,7 @@ export const fetchPageContent_home: string = `*[_type == 'pageContent' && pageTi
   }
   }
 `
+
 export const fetchPageContent_projects: string = `*[_type == 'pageContent' && pageTitle == 'Projects Page']
 {
   'pageSection': {'Title': pageSection[0].title, 'content':pageSection[0].content[0].text}
@@ -112,21 +118,15 @@ export const fetchPageContent_skill: string = `*[_type == 'pageContent' && pageT
 export const fetchPageContent_about: string = `*[_type == 'pageContent' && pageTitle == 'About Page']
 {
   'profile':{'name':pageSection[0].content[0].text, 'Content': pageSection[0].content[1]},
-  'About Me': {'name': pageSection[1].title, 'Content': pageSection[1].content[0].text},
+  'AboutMe': {'name': pageSection[1].title, 'Content': pageSection[1].content[0].text},
   'Interest': {'name': pageSection[2].title, 'Content': pageSection[2].content[0].text},
-  'Image':{'image_url': image[0].image_url.asset._ref, 'image_alt': image[0].alt}
+  'ProfileImage':{'image_url': image[0].image_url.asset._ref, 'image_alt': image[0].alt}
 }`
+
 
 export const fetchPageContent_contact: string = `*[_type == 'pageContent' && pageTitle == 'Contact Page']
 {
-  'Page Banner': {'Title': pageSection[0].title, 'Content': pageSection[0].content[0].text}
+  'PageBanner': {'Title': pageSection[0].title, 'Content': pageSection[0].content[0].text}
 }`
+// fetch function
 
-
-// fetch function 
-
-export async function fetchFunction(query: string): Promise<any> {
-    const option: { cache: RequestCache } = {cache: 'no-store'};
-    const pageContent: any = await client.fetch(query, {}, option);
-    return pageContent
-}

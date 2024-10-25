@@ -18,8 +18,8 @@
 }
 
 .skills_container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(6.25rem, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-content: center;
     gap: 1rem;
