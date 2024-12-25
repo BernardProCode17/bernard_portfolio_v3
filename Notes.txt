@@ -2,12 +2,15 @@ add privacy ploies card
 
 add google analytics to the site with a heatmap
 
-refactor styles
+refactor styles - X
 
 add page content to sanity
+
+list skills and write concepts learned about skills
 
 add social media links and icons from sanity
 
 /*    *************************************************** Fix  **********************************************     */
 edit brief statement styles to add width and line height
 add filter buttons for skills page
+fix page content for better grammar

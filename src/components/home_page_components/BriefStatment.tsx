@@ -2,12 +2,10 @@ import PageSections from "../minor components/PageSections";
 
 type pageDataBrief = {
     Title: string,
-    Content: string[]
+    Content: string
 }
 export default function BriefStatement({pageData}: { pageData: pageDataBrief }) {
     const {Title, Content} = pageData;
-
-console.log(pageData)
 
     return (
         <PageSections cssClass="brief_statement">

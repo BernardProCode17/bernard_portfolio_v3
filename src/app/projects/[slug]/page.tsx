@@ -74,9 +74,7 @@ export default async function Project({params}: { params: { slug: string } }) {
 
             </div>
 
-            <div className="project_connection">
                 <Connection/>
-            </div>
         </main>
     )
 };

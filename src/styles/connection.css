@@ -2,8 +2,7 @@
   border: 0.125rem solid var(--primary-color-border);
   border-radius: 0.625rem;
   width: 100%;
-  max-width:  48.125rem;
-  
+  max-width: 48.125rem;
 }
 
 .connection_content {
