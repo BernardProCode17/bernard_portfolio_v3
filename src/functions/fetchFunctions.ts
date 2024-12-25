@@ -65,7 +65,7 @@ export const fetchPageContent_home: string = `*[_type == 'pageContent' && pageTi
   
   'StatementSection': {
     'Title': pageSection[1].title,
-    'Content': pageSection[1].content[]
+    'Content': pageSection[1].content[0].text
   },
   
   'projectSection': {
