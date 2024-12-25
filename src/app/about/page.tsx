@@ -19,6 +19,8 @@ export default async function About() {
     //Profile Image
     const imgSrc = ProfileImage.image_url && urlFor(ProfileImage.image_url).url()
 
+
+
     return (
         <main>
             
@@ -33,7 +35,7 @@ export default async function About() {
                 </HeadingSection>
 
                 <div className="about_body">
-
+                    {/* Make about section content an array and loop over it */}
                     <section className='section about_section'>
                         <h3 className='about_section-title'>{AboutMe.name}</h3>
                         <p className='about_section-content'>{AboutMe.Content}</p>
