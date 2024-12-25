@@ -1,9 +1,10 @@
 .brief_statement {
     margin: 1.875rem 0;
     background-color: var(--tertiary-color);
-    padding: 5px;
+    padding: 1.5remrem;
     border-radius: 0.625rem;
     border-bottom: none;
+    max-width: 1080px;
     -webkit-border-radius: 0.625rem;
     -moz-border-radius: 0.625rem;
     -ms-border-radius: 0.625rem;
@@ -16,9 +17,10 @@
 }
 
 .statement_content {
-    text-align: start;
+    text-align: center;
     margin: 0;
-    padding-left: 3%;
+    padding: 3%;
+    /* width:35% */
 }
 
 @media screen and (min-width: 64rem) {

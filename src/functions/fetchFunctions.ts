@@ -65,7 +65,7 @@ export const fetchPageContent_home: string = `*[_type == 'pageContent' && pageTi
   
   'StatementSection': {
     'Title': pageSection[1].title,
-    'Content': pageSection[1].content[0].text
+    'Content': pageSection[1].content[]
   },
   
   'projectSection': {
@@ -101,6 +101,7 @@ export const fetchPageContent_home: string = `*[_type == 'pageContent' && pageTi
     'Image': {'URL':image[0].image_url.asset._ref, 'altText': image[0].alt}
   }
   }
+
 `
 
 export const fetchPageContent_projects: string = `*[_type == 'pageContent' && pageTitle == 'Projects Page']

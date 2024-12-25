@@ -13,7 +13,7 @@ export default function Profile({cssClass, profilePhoto, subtitle, statement}: P
         <div className={`${cssClass} profile_container`}>
             <div className="home_about_profile_image_container">
                 <Image className="home_about_profile_image" src={profilePhoto.URL && urlFor(profilePhoto.URL).url()}
-                       alt={profilePhoto.altText} width={200} height={200}
+                       alt={profilePhoto.altText} width={300} height={400}
                        loading={"lazy"} quality={100}/>
             </div>
 
