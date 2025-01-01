@@ -119,8 +119,8 @@ export const fetchPageContent_skill: string = `*[_type == 'pageContent' && pageT
 export const fetchPageContent_about: string = `*[_type == 'pageContent' && pageTitle == 'About Page']
 {
   'profile':{'name':pageSection[0].content[0].text, 'Content': pageSection[0].content[1]},
-  'AboutMe': {'name': pageSection[1].title, 'Content': pageSection[1].content[0].text},
-  'Interest': {'name': pageSection[2].title, 'Content': pageSection[2].content[0].text},
+  'AboutMe': {'name': pageSection[1].title, 'Content': pageSection[1].content},
+  'Interest': {'name': pageSection[2].title, 'Content': pageSection[2].content},
   'ProfileImage':{'image_url': image[0].image_url.asset._ref, 'image_alt': image[0].alt}
 }`
 

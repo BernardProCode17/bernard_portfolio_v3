@@ -22,10 +22,10 @@
     border-radius: 1%;
 }
 
-.about_heading-subtitle,
-.about_heading-statement {
-    margin: 0rem;
-}
+/*.about_heading-subtitle,*/
+/*.about_heading-statement {*/
+/*    margin: 0rem;*/
+/*}*/
 
 .about_page_profile_photo {
     width: 100%;
@@ -91,14 +91,15 @@
     }
 
     .about_section {
-        width: 70%;
-        height: 300px;
+        width: 80%;
+        height: max-content;
     }
 
     .about_page-heading {
         width: 50%;
         margin-left: 20px;
     }
+
     .about_page_profile_photo {
         width: 70%;
         min-height: 100%;
