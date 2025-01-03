@@ -40,11 +40,11 @@ export default async function About() {
                         <h3 className='about_section-title'>{AboutMe.name}</h3>
 
                         {AboutMe.Content.map((content: { text: string, subContent: string }, index: Key) => (
-                            <React.Fragment key={index}>
+                            <div key={index}>
                                 <p className='about_section-content'>{content.text}</p>
                                 {content.subContent?.trim() && (
                                     <p className='about_section-content'>{content.subContent}</p>)}
-                            </React.Fragment>
+                            </div>
 
                         ))}
                     </section>
@@ -52,10 +52,10 @@ export default async function About() {
                     <section className='section about_section'>
                         <h3 className='about_section-title'>{Interest.name}</h3>
                         {Interest.Content.map((content: { text: string, subContent: string }, index: Key) => (
-                            <React.Fragment key={index}>
+                            <div key={index}>
                                 <p className='about_section-content'>{content.text}</p>
                                 <p className='about_section-content'>{content.subContent}</p>
-                            </React.Fragment>
+                            </div>
                         ))}
 
                     </section>

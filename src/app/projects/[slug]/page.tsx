@@ -10,10 +10,10 @@ import Connection from '@/components/minor components/Connection';
 import {Metadata} from "next/types";
 
 // Fetching data for Metadata
-export const generateMetadata = async ({ params }: { params: { slug: string } }): Promise<Metadata> => {
-    const { slug } = await params;
-    const projectFetchParams = await fetchFunction(fetchProjectBySlug({ slug:slug }));
-    const { title, long_description } = projectFetchParams[0];
+export const generateMetadata = async ({params}: { params: { slug: string } }): Promise<Metadata> => {
+    const {slug} = await params;
+    const projectFetchParams = await fetchFunction(fetchProjectBySlug({slug: slug}));
+    const {title, long_description} = projectFetchParams[0];
     return {
         title: `${title} | Bernard Clarke | Front-end Javascript React developer`,
         description: long_description.content,
@@ -24,9 +24,19 @@ export default async function Project({params}: { params: { slug: string } }) {
 
     const {slug} = await params;
     const projectFetchParams = await fetchFunction(fetchProjectBySlug({slug: slug}));
-    const {title,short_description,long_description,features,challenges_solutions,reflection,project_image,project_image_alt,project_links} = projectFetchParams[0];
+    const {
+        title,
+        short_description,
+        long_description,
+        features,
+        challenges_solutions,
+        reflection,
+        project_image,
+        project_image_alt,
+        project_links
+    } = projectFetchParams[0];
     const contentArray = [long_description, features, challenges_solutions, reflection];
-    console.log(' Long description',long_description)
+    console.log(' Long description', long_description)
 
     const linkSVG = (link: string) => {
         switch (link) {
@@ -74,7 +84,8 @@ export default async function Project({params}: { params: { slug: string } }) {
 
             </div>
 
-                <Connection/>
+            {/*                Links to other project from the  **PROJECT PAGE**    */}
+            <Connection/>
         </main>
     )
 };
