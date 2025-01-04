@@ -11,7 +11,7 @@ import {Metadata} from "next/types";
 
 // Fetching data for Metadata
 export const generateMetadata = async ({params}: { params: Promise<{ slug: string }> }): Promise<Metadata> => {
-    const slug = (await params).slug;
+    const {slug} = await params;
     const projectFetchParams = await fetchFunction(fetchProjectBySlug({slug: slug}));
     const {title, long_description} = projectFetchParams[0];
     return {
@@ -24,7 +24,7 @@ export default async function Project({params}: { params: Promise<{ slug: string
 
     console.log('params', params)
 
-    const slug = (await params).slug;
+    const {slug} = await params;
     const projectFetchParams = await fetchFunction(fetchProjectBySlug({slug: slug}));
     const {
         title,
