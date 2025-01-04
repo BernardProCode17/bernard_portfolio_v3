@@ -28,6 +28,7 @@ export default async function Project({params}: { params: slugProps }) {
     const {slug} = await params;
     const projectFetchParams = await fetchFunction(fetchProjectBySlug(slug));
 
+
     const {
         title,
         short_description,
