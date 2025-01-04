@@ -1,7 +1,10 @@
 import {client} from '@/sanity/lib/client';
 
 export async function fetchFunction(query: string): Promise<any> {
-    const option: { cache: RequestCache } = {cache: 'no-store'};
+    const option: { cache: RequestCache, next: { revalidate: 3600 } } = {
+        cache: 'force-cache',
+        next: {revalidate: 3600}
+    };
     const pageContent: any = await client.fetch(query, {}, option);
     return pageContent
 }

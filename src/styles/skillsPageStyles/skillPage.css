@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: var(--primary-color-border);
+    /*background-color: var(--secondary-color);*/
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -44,8 +44,12 @@
 }
 
 .skill_concept_item {
-    list-style: disc;
+    list-style: none;
     width: 100%;
+}
+
+.skill_concept_item:before {
+    content: "\2B9A";
 }
 
 .skill_page_back_button {
@@ -80,10 +84,10 @@
 /* media Queries */
 @media screen and (min-width: 30.0625rem) {
 
-    .skill_heading{
+    .skill_heading {
         width: 70%
     }
-    
+
     .skill_logo {
         width: 50%;
         height: auto;
@@ -96,7 +100,7 @@
     .skill_concept_list {
         align-self: center;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 10rem);
         justify-content: start;
         align-items: center;
         column-gap: 0.5rem;
@@ -121,7 +125,7 @@
         width: 80%;
     }
 
-    .skill_concept_list{
+    .skill_concept_list {
         column-gap: 5.5rem;
     }
 }
