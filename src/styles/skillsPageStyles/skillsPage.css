@@ -18,10 +18,11 @@
 }
 
 .skills_container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
     gap: 1rem;
     padding: 1rem;
     margin: 1rem;
@@ -29,9 +30,16 @@
     width: 100%;
     height: auto;
     border-radius: 0.625rem;
-    -webkit-border-radius: 0.625rem;
-    -moz-border-radius: 0.625rem;
-    -ms-border-radius: 0.625rem;
-    -o-border-radius: 0.625rem;
 }
 
+@media (min-width: 420px) {
+    .skills_container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 640px) {
+    .skills_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
