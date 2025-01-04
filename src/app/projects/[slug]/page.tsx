@@ -10,7 +10,7 @@ import Connection from '@/components/minor components/Connection';
 import {Metadata} from "next/types";
 
 // Fetching data for Metadata
-export const generateMetadata = async ({params}: { params: Promise<{ slug: string }> }): Promise<Metadata> => {
+export const generateMetadata = async ({params}: { params: Promise<any> }): Promise<Metadata> => {
     const slug = (await params).slug;
     const projectFetchParams = await fetchFunction(fetchProjectBySlug({slug}));
     const {title, long_description} = projectFetchParams[0];
@@ -20,7 +20,7 @@ export const generateMetadata = async ({params}: { params: Promise<{ slug: strin
     };
 };
 
-export default async function Project({params}: { params: Promise<{ slug: string }> }) {
+export default async function Project({params}: { params: Promise<any> }) {
 
     // console.log('params Props', (await params).slug)
     const slug = (await params).slug;
