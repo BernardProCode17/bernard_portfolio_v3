@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f59ed1ef-aabb-4eae-b75f-2592f34c0098" name="Changes" comment="Add missing line break for code readability&#10;&#10;A blank line was added to improve code structure and readability. This helps maintain consistency with formatting standards in the file.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="f59ed1ef-aabb-4eae-b75f-2592f34c0098" name="Changes" comment="Refactor slugProps type and improve code readability.&#10;&#10;Updated `slugProps` type in `page.tsx` to use a more generic `any` type for flexibility. Adjusted `.idea/workspace.xml` to include a missing line break, enhancing code readability and maintaining formatting consistency." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -117,7 +115,7 @@
       <workItem from="1735694932389" duration="8247000" />
       <workItem from="1735709786002" duration="83000" />
       <workItem from="1735941128869" duration="145000" />
-      <workItem from="1735943490705" duration="18116000" />
+      <workItem from="1735943490705" duration="18494000" />
     </task>
     <task id="LOCAL-00001" summary="refactor pages to add content from CMS, refactor fetching to use one fetching function for both page content and project/skills">
       <option name="closed" value="true" />
@@ -247,7 +245,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735969888270</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Refactor slugProps type and improve code readability.&#10;&#10;Updated `slugProps` type in `page.tsx` to use a more generic `any` type for flexibility. Adjusted `.idea/workspace.xml` to include a missing line break, enhancing code readability and maintaining formatting consistency.">
+      <option name="closed" value="true" />
+      <created>1735970728837</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1735970728837</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,6 +284,7 @@
     <MESSAGE value="Refactor parameter handling in project-related functions.&#10;&#10;Unified parameter structure by using destructuring for improved clarity. Updated `fetchProjectBySlug` to accept a string instead of an array. Adjusted `generateMetadata` and `Project` functions to reflect these changes, simplifying data handling and boosting readability." />
     <MESSAGE value="testing props type for deployment" />
     <MESSAGE value="Add missing line break for code readability&#10;&#10;A blank line was added to improve code structure and readability. This helps maintain consistency with formatting standards in the file." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add missing line break for code readability&#10;&#10;A blank line was added to improve code structure and readability. This helps maintain consistency with formatting standards in the file." />
+    <MESSAGE value="Refactor slugProps type and improve code readability.&#10;&#10;Updated `slugProps` type in `page.tsx` to use a more generic `any` type for flexibility. Adjusted `.idea/workspace.xml` to include a missing line break, enhancing code readability and maintaining formatting consistency." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor slugProps type and improve code readability.&#10;&#10;Updated `slugProps` type in `page.tsx` to use a more generic `any` type for flexibility. Adjusted `.idea/workspace.xml` to include a missing line break, enhancing code readability and maintaining formatting consistency." />
   </component>
 </project>
