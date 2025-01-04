@@ -1,5 +1,9 @@
 import {client} from '@/sanity/lib/client';
 
+type slugProps = {
+    slug: string
+}
+
 export async function fetchFunction(query: string): Promise<any> {
     const option: { next: { revalidate: 60 } } = {
         next: {revalidate: 60}
@@ -20,9 +24,7 @@ export const fetchProjectQuery: string = `*[_type == 'projects'] {
   project_links
 }`
 
-export const fetchProjectBySlug = (params: {
-    slug: string
-}): string => `*[_type == 'projects' && slug.current == '${params.slug}'] {
+export const fetchProjectBySlug = (params: slugProps): string => `*[_type == 'projects' && slug.current == '${params.slug}'] {
   title,
   'slug':slug.current,
   short_description,
