@@ -4,7 +4,7 @@ import SkillCard from '@/components/skillsPage/skillCard';
 import {SkillTypes} from '@/types/skillTypes';
 import {Metadata} from "next/types";
 
-export const metadata:Metadata = {
+export const metadata: Metadata = {
     title: "Skills | Bernard Clarke | Front-end Javascript React developer",
     description: "Discover the diverse skill set of Bernard Clarke, a front-end JavaScript React developer based in Vancouver, BC. Explore expertise in React, TypeScript, Next.js, and more. Learn how these skills contribute to creating responsive and accessible web applications.",
 }
@@ -27,8 +27,7 @@ export default async function Skills() {
         UXIndicator: string
     }[];
     const SkillPageContent: SkillPageContentType = await fetchFunction(fetchPageContent_skill);
-    const {FilterSection, UXIndicator, ...rest} = SkillPageContent[0];
-    console.log(fetchResult)
+    const {FilterSection, UXIndicator} = SkillPageContent[0];
 
 
     return (

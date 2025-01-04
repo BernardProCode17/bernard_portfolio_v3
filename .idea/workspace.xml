@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f59ed1ef-aabb-4eae-b75f-2592f34c0098" name="Changes" comment="Refactor skills page layout and update styles&#10;&#10;Replaced flex with a responsive grid for improved alignment and scalability on the skills page. Modified media queries for better mobile responsiveness and polished list styles for consistency. Adjusted fetching function to enhance caching behavior.">
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
+    <list default="true" id="f59ed1ef-aabb-4eae-b75f-2592f34c0098" name="Changes" comment="Add @vercel/speed-insights package and integrate in layout&#10;&#10;Integrated the SpeedInsights React component in the app's layout for performance insights. Updated `package.json` and `package-lock.json` to include the new dependency. Adjusted formatting for consistency in the `RootLayout` component.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/projects/[slug]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/projects/[slug]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/skills/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/skills/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/functions/fetchFunctions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/functions/fetchFunctions.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +19,11 @@
     <option name="myRunOnSave" value="true" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -111,7 +117,7 @@
       <workItem from="1735694932389" duration="8247000" />
       <workItem from="1735709786002" duration="83000" />
       <workItem from="1735941128869" duration="145000" />
-      <workItem from="1735943490705" duration="8459000" />
+      <workItem from="1735943490705" duration="10862000" />
     </task>
     <task id="LOCAL-00001" summary="refactor pages to add content from CMS, refactor fetching to use one fetching function for both page content and project/skills">
       <option name="closed" value="true" />
@@ -161,7 +167,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735959988285</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add @vercel/speed-insights package and integrate in layout&#10;&#10;Integrated the SpeedInsights React component in the app's layout for performance insights. Updated `package.json` and `package-lock.json` to include the new dependency. Adjusted formatting for consistency in the `RootLayout` component.">
+      <option name="closed" value="true" />
+      <created>1735960669680</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1735960669680</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,17 +188,7 @@
     <MESSAGE value="Added comment to add view more projects from the project page" />
     <MESSAGE value="Refactor skills page layout and update styles&#10;&#10;Modified `.skills_container` to use a responsive grid layout instead of flex, improving alignment and scalability. Adjusted media queries for better mobile responsiveness and polished styles across related components." />
     <MESSAGE value="Refactor skills page layout and update styles&#10;&#10;Replaced flex with a responsive grid for improved alignment and scalability on the skills page. Modified media queries for better mobile responsiveness and polished list styles for consistency. Adjusted fetching function to enhance caching behavior." />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor skills page layout and update styles&#10;&#10;Replaced flex with a responsive grid for improved alignment and scalability on the skills page. Modified media queries for better mobile responsiveness and polished list styles for consistency. Adjusted fetching function to enhance caching behavior." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/app/projects/[slug]/page.tsx</url>
-          <line>54</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Add @vercel/speed-insights package and integrate in layout&#10;&#10;Integrated the SpeedInsights React component in the app's layout for performance insights. Updated `package.json` and `package-lock.json` to include the new dependency. Adjusted formatting for consistency in the `RootLayout` component." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add @vercel/speed-insights package and integrate in layout&#10;&#10;Integrated the SpeedInsights React component in the app's layout for performance insights. Updated `package.json` and `package-lock.json` to include the new dependency. Adjusted formatting for consistency in the `RootLayout` component." />
   </component>
 </project>
