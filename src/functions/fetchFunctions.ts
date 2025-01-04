@@ -21,7 +21,7 @@ export const fetchProjectQuery: string = `*[_type == 'projects'] {
 }`
 
 export const fetchProjectBySlug = (params: {
-    slug: string
+    slug: string[]
 }): string => `*[_type == 'projects' && slug.current == '${params.slug}'] {
   title,
   'slug':slug.current,

@@ -9,9 +9,14 @@ import ContentArticle from '@/components/project_page-component/ContentArticle';
 import Connection from '@/components/minor components/Connection';
 import {Metadata} from "next/types";
 
+
+interface Props {
+    params: { slug: string[] }
+}
+
 // Fetching data for Metadata
-export const generateMetadata = async ({params}: { params: Promise<{ slug: string }> }): Promise<Metadata> => {
-    const {slug} = await params;
+export const generateMetadata = async (Props: Props): Promise<Metadata> => {
+    const {slug} = Props.params;
     const projectFetchParams = await fetchFunction(fetchProjectBySlug({slug: slug}));
     const {title, long_description} = projectFetchParams[0];
     return {
@@ -20,11 +25,10 @@ export const generateMetadata = async ({params}: { params: Promise<{ slug: strin
     };
 };
 
-export default async function Project({params}: { params: Promise<{ slug: string }> }) {
 
-    console.log('params', params)
+export default async function Project(Props: Props) {
 
-    const {slug} = await params;
+    const {slug} = Props.params;
     const projectFetchParams = await fetchFunction(fetchProjectBySlug({slug: slug}));
     const {
         title,
