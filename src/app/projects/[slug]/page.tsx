@@ -9,13 +9,12 @@ import ContentArticle from '@/components/project_page-component/ContentArticle';
 import Connection from '@/components/minor components/Connection';
 import {Metadata} from "next/types";
 
-type slugProps = {
-    slug: string
-}
+type slugProps = Promise<{ slug: string[] }>;
+
 // Fetching data for Metadata
-export const generateMetadata = async ({params}: { params: Promise<slugProps> }): Promise<Metadata> => {
-    const slug = (await params).slug;
-    const projectFetchParams = await fetchFunction(fetchProjectBySlug({slug}));
+export const generateMetadata = async ({params}: { params: slugProps }): Promise<Metadata> => {
+    const {slug} = await params;
+    const projectFetchParams = await fetchFunction(fetchProjectBySlug(slug));
     const {title, long_description} = projectFetchParams[0];
     return {
         title: `${title} | Bernard Clarke | Front-end Javascript React developer`,
@@ -23,11 +22,11 @@ export const generateMetadata = async ({params}: { params: Promise<slugProps> })
     };
 };
 
-export default async function Project({params}: { params: Promise<slugProps> }) {
+export default async function Project({params}: { params: slugProps }) {
 
-    // console.log('params Props', (await params).slug)
-    const slug = (await params).slug;
-    const projectFetchParams = await fetchFunction(fetchProjectBySlug({slug}));
+    // console.log('params Props', params.slug)
+    const {slug} = await params;
+    const projectFetchParams = await fetchFunction(fetchProjectBySlug(slug));
 
     const {
         title,
