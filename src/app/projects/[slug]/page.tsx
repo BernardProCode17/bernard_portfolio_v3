@@ -9,7 +9,7 @@ import ContentArticle from '@/components/project_page-component/ContentArticle';
 import Connection from '@/components/minor components/Connection';
 import {Metadata} from "next/types";
 
-type slugProps = Promise<{ slug: string[] }>;
+type slugProps = Promise<any>;
 
 // Fetching data for Metadata
 export const generateMetadata = async ({params}: { params: slugProps }): Promise<Metadata> => {

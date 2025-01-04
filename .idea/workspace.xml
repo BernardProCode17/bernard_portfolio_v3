@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f59ed1ef-aabb-4eae-b75f-2592f34c0098" name="Changes" comment="testing props type for deployment">
+    <list default="true" id="f59ed1ef-aabb-4eae-b75f-2592f34c0098" name="Changes" comment="Add missing line break for code readability&#10;&#10;A blank line was added to improve code structure and readability. This helps maintain consistency with formatting standards in the file.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/projects/[slug]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/projects/[slug]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/functions/fetchFunctions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/functions/fetchFunctions.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +117,7 @@
       <workItem from="1735694932389" duration="8247000" />
       <workItem from="1735709786002" duration="83000" />
       <workItem from="1735941128869" duration="145000" />
-      <workItem from="1735943490705" duration="17213000" />
+      <workItem from="1735943490705" duration="18116000" />
     </task>
     <task id="LOCAL-00001" summary="refactor pages to add content from CMS, refactor fetching to use one fetching function for both page content and project/skills">
       <option name="closed" value="true" />
@@ -233,7 +231,23 @@
       <option name="project" value="LOCAL" />
       <updated>1735968549411</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Refactor slug handling and type definitions.&#10;&#10;Updated slug handling to improve consistency and simplify function usage by directly passing data without wrapping it in an object. Adjusted relevant types and parameters across functions to align with the new structure.">
+      <option name="closed" value="true" />
+      <created>1735969865267</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1735969865267</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Add missing line break for code readability&#10;&#10;A blank line was added to improve code structure and readability. This helps maintain consistency with formatting standards in the file.">
+      <option name="closed" value="true" />
+      <created>1735969888270</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1735969888270</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,6 +277,7 @@
     <MESSAGE value="Refactor parameter handling in project-related functions.&#10;&#10;Updated `generateMetadata` and `Project` functions to utilize a unified `Props` interface with object destructuring, improving code clarity. Adjusted `fetchProjectBySlug` to accept `slug` as an array to align with updated parameter structure. Minor edits applied to `.idea/workspace.xml` to reflect changes." />
     <MESSAGE value="Refactor parameter handling in project-related functions.&#10;&#10;Unified parameter structure by using destructuring for improved clarity. Updated `fetchProjectBySlug` to accept a string instead of an array. Adjusted `generateMetadata` and `Project` functions to reflect these changes, simplifying data handling and boosting readability." />
     <MESSAGE value="testing props type for deployment" />
-    <option name="LAST_COMMIT_MESSAGE" value="testing props type for deployment" />
+    <MESSAGE value="Add missing line break for code readability&#10;&#10;A blank line was added to improve code structure and readability. This helps maintain consistency with formatting standards in the file." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add missing line break for code readability&#10;&#10;A blank line was added to improve code structure and readability. This helps maintain consistency with formatting standards in the file." />
   </component>
 </project>
