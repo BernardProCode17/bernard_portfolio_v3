@@ -9,15 +9,10 @@ import ContentArticle from '@/components/project_page-component/ContentArticle';
 import Connection from '@/components/minor components/Connection';
 import {Metadata} from "next/types";
 
-
-interface Props {
-    params: { slug: string[] }
-}
-
 // Fetching data for Metadata
-export const generateMetadata = async (Props: Props): Promise<Metadata> => {
-    const {slug} = Props.params;
-    const projectFetchParams = await fetchFunction(fetchProjectBySlug({slug: slug}));
+export const generateMetadata = async ({params}: { params: Promise<{ slug: string }> }): Promise<Metadata> => {
+    const slug = (await params).slug;
+    const projectFetchParams = await fetchFunction(fetchProjectBySlug({slug}));
     const {title, long_description} = projectFetchParams[0];
     return {
         title: `${title} | Bernard Clarke | Front-end Javascript React developer`,
@@ -25,11 +20,12 @@ export const generateMetadata = async (Props: Props): Promise<Metadata> => {
     };
 };
 
+export default async function Project({params}: { params: Promise<{ slug: string }> }) {
 
-export default async function Project(Props: Props) {
+    // console.log('params Props', (await params).slug)
+    const slug = (await params).slug;
+    const projectFetchParams = await fetchFunction(fetchProjectBySlug({slug}));
 
-    const {slug} = Props.params;
-    const projectFetchParams = await fetchFunction(fetchProjectBySlug({slug: slug}));
     const {
         title,
         short_description,
@@ -41,8 +37,8 @@ export default async function Project(Props: Props) {
         project_image_alt,
         project_links
     } = projectFetchParams[0];
+
     const contentArray = [long_description, features, challenges_solutions, reflection];
-    console.log(' Long description', long_description)
 
     const linkSVG = (link: string) => {
         switch (link) {

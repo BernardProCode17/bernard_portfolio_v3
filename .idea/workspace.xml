@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f59ed1ef-aabb-4eae-b75f-2592f34c0098" name="Changes" comment="Refactor parameter destructuring in project pages.&#10;&#10;Updated parameter handling in `generateMetadata` and `ProjectPage` functions to use object destructuring, improving code readability. Minor changes were also made to `.idea/workspace.xml` for task and problem view state updates.">
+    <list default="true" id="f59ed1ef-aabb-4eae-b75f-2592f34c0098" name="Changes" comment="Refactor parameter handling in project-related functions.&#10;&#10;Updated `generateMetadata` and `Project` functions to utilize a unified `Props` interface with object destructuring, improving code clarity. Adjusted `fetchProjectBySlug` to accept `slug` as an array to align with updated parameter structure. Minor edits applied to `.idea/workspace.xml` to reflect changes.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/projects/[slug]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/projects/[slug]/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/functions/fetchFunctions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/functions/fetchFunctions.ts" afterDir="false" />
@@ -119,7 +119,7 @@
       <workItem from="1735694932389" duration="8247000" />
       <workItem from="1735709786002" duration="83000" />
       <workItem from="1735941128869" duration="145000" />
-      <workItem from="1735943490705" duration="12853000" />
+      <workItem from="1735943490705" duration="15345000" />
     </task>
     <task id="LOCAL-00001" summary="refactor pages to add content from CMS, refactor fetching to use one fetching function for both page content and project/skills">
       <option name="closed" value="true" />
@@ -201,7 +201,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735964477675</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Refactor parameter handling in project-related functions.&#10;&#10;Updated `generateMetadata` and `Project` functions to utilize a unified `Props` interface with object destructuring, improving code clarity. Adjusted `fetchProjectBySlug` to accept `slug` as an array to align with updated parameter structure. Minor edits applied to `.idea/workspace.xml` to reflect changes.">
+      <option name="closed" value="true" />
+      <created>1735965409441</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1735965409441</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,6 +236,7 @@
     <MESSAGE value="Add @vercel/speed-insights package and integrate in layout&#10;&#10;Integrated the SpeedInsights React component in the app's layout for performance insights. Updated `package.json` and `package-lock.json` to include the new dependency. Adjusted formatting for consistency in the `RootLayout` component." />
     <MESSAGE value="Refactor fetch function and clean up project code&#10;&#10;Updated fetch revalidation caching from 3600 to 60 seconds to improve data freshness. Removed unnecessary declarations and console logs, simplifying the codebase. Addressed metadata generation and parameter handling for better readability and performance in project and skills pages." />
     <MESSAGE value="Refactor parameter destructuring in project pages.&#10;&#10;Updated parameter handling in `generateMetadata` and `ProjectPage` functions to use object destructuring, improving code readability. Minor changes were also made to `.idea/workspace.xml` for task and problem view state updates." />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor parameter destructuring in project pages.&#10;&#10;Updated parameter handling in `generateMetadata` and `ProjectPage` functions to use object destructuring, improving code readability. Minor changes were also made to `.idea/workspace.xml` for task and problem view state updates." />
+    <MESSAGE value="Refactor parameter handling in project-related functions.&#10;&#10;Updated `generateMetadata` and `Project` functions to utilize a unified `Props` interface with object destructuring, improving code clarity. Adjusted `fetchProjectBySlug` to accept `slug` as an array to align with updated parameter structure. Minor edits applied to `.idea/workspace.xml` to reflect changes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor parameter handling in project-related functions.&#10;&#10;Updated `generateMetadata` and `Project` functions to utilize a unified `Props` interface with object destructuring, improving code clarity. Adjusted `fetchProjectBySlug` to accept `slug` as an array to align with updated parameter structure. Minor edits applied to `.idea/workspace.xml` to reflect changes." />
   </component>
 </project>
