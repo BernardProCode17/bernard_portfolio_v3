@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f59ed1ef-aabb-4eae-b75f-2592f34c0098" name="Changes" comment="Refactor `slugProps` type and improve code readability.&#10;&#10;Updated `slugProps` type in `page.tsx` to a more flexible `any` type. Commented out the `generateMetadata` function for future review. Adjusted `.idea/workspace.xml` to fix formatting by adding a missing line break, enhancing consistency and readability.">
+    <list default="true" id="f59ed1ef-aabb-4eae-b75f-2592f34c0098" name="Changes" comment="Updated text in VOTD function&#10;added function to automactically update year in footer&#10;Changes caching in fetch function">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header_footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header_footer/Footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/functions/VOTD.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/functions/VOTD.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/functions/fetchFunctions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/functions/fetchFunctions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header_footer/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header_footer/Header.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +120,7 @@
       <workItem from="1735941128869" duration="145000" />
       <workItem from="1735943490705" duration="19291000" />
       <workItem from="1736276596329" duration="2950000" />
-      <workItem from="1736285369727" duration="1044000" />
+      <workItem from="1736285369727" duration="2629000" />
     </task>
     <task id="LOCAL-00001" summary="refactor pages to add content from CMS, refactor fetching to use one fetching function for both page content and project/skills">
       <option name="closed" value="true" />
@@ -276,7 +274,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735971520131</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Updated text in VOTD function&#10;added function to automactically update year in footer&#10;Changes caching in fetch function">
+      <option name="closed" value="true" />
+      <created>1736287218263</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1736287218263</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,6 +315,7 @@
     <MESSAGE value="Add missing line break for code readability&#10;&#10;A blank line was added to improve code structure and readability. This helps maintain consistency with formatting standards in the file." />
     <MESSAGE value="Refactor slugProps type and improve code readability.&#10;&#10;Updated `slugProps` type in `page.tsx` to use a more generic `any` type for flexibility. Adjusted `.idea/workspace.xml` to include a missing line break, enhancing code readability and maintaining formatting consistency." />
     <MESSAGE value="Refactor `slugProps` type and improve code readability.&#10;&#10;Updated `slugProps` type in `page.tsx` to a more flexible `any` type. Commented out the `generateMetadata` function for future review. Adjusted `.idea/workspace.xml` to fix formatting by adding a missing line break, enhancing consistency and readability." />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor `slugProps` type and improve code readability.&#10;&#10;Updated `slugProps` type in `page.tsx` to a more flexible `any` type. Commented out the `generateMetadata` function for future review. Adjusted `.idea/workspace.xml` to fix formatting by adding a missing line break, enhancing consistency and readability." />
+    <MESSAGE value="Updated text in VOTD function&#10;added function to automactically update year in footer&#10;Changes caching in fetch function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated text in VOTD function&#10;added function to automactically update year in footer&#10;Changes caching in fetch function" />
   </component>
 </project>

@@ -5,7 +5,7 @@ import {Metadata} from "next/types";
 
 // Fetching data for Metadata
 export const generateMetadata = async ({params}: { params: { slug: string } }): Promise<Metadata> => {
-    const {slug} = await params;
+    const {slug} = params;
     const projectFetchParams = await fetchFunction(fetchSkillBySlug({slug}));
     const {title, skill_description} = projectFetchParams[0];
     return {
@@ -17,7 +17,7 @@ export const generateMetadata = async ({params}: { params: { slug: string } }): 
 export default async function SkillPage({params}: { params: { slug: string } }) {
 
     //Fetch skill data
-    const {slug} = await params;
+    const {slug} = params;
     const skillResults = await fetchFunction(fetchSkillBySlug({slug}));
     const {title, skill_description, features, skill_image, ...rest} = skillResults[0];
 

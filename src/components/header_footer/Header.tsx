@@ -11,14 +11,14 @@ export default function Header() {
             {/* Logo */}
             <div className="header_logo">
                 <Link href="/">
-                    <Image src={logo} alt="Bernard Clarke logo -'Letter B in curly braces" />
+                    <Image src={logo} alt="Bernard Clarke logo -'Letter B in curly braces" priority={true}/>
                 </Link>
             </div>
 
             {/* Menu */}
             <div className="header_menu">
-                <MenuButton />
-                <MenuNavigation />
+                <MenuButton/>
+                <MenuNavigation/>
             </div>
         </header>
     )
