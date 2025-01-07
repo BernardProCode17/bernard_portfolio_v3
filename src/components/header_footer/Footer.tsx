@@ -2,7 +2,6 @@ import Image from "next/image";
 import logo from '../../assets/logo_mobile.svg'
 import FooterNavigation from "../minor components/FooterNavigation";
 import SocialConnections from "../minor components/SocialConnections";
-import { Span } from "next/dist/trace";
 
 
 export default function Footer() {
@@ -11,14 +10,15 @@ export default function Footer() {
 
             {/* Logo */}
             <div className="footer_logo-container">
-                <Image src={logo} alt="Bernard Clarke logo -'Letter B in curly braces" className="footer_logo" />
+                <Image src={logo} alt="Bernard Clarke logo -'Letter B in curly braces" className="footer_logo"/>
             </div>
 
             {/* Navigation */}
-            <FooterNavigation />
+            <FooterNavigation/>
 
             {/* social connections */}
-            <SocialConnections divClass1="social_connection_container" divClass2="social_connection" linkClass="footer_social_links"/>
+            <SocialConnections divClass1="social_connection_container" divClass2="social_connection"
+                               linkClass="footer_social_links"/>
 
             {/* footer copy */}
             <div className="footer_details">
@@ -26,7 +26,7 @@ export default function Footer() {
                 <p className="footer_details-made-with">Made with
                     <em className="footer_details-made-tech">#Next.Js #TypeScript #Code</em>
                 </p>
-                <span className="footer_details-year">&copy; 2024</span>
+                <span className="footer_details-year">&copy; {new Date().getFullYear()}</span>
             </div>
         </footer>
     )
