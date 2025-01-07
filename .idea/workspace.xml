@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f59ed1ef-aabb-4eae-b75f-2592f34c0098" name="Changes" comment="Remove await from Slug= params">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="f59ed1ef-aabb-4eae-b75f-2592f34c0098" name="Changes" comment="Resolving Error">
       <change beforePath="$PROJECT_DIR$/src/app/skills/[slug]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/skills/[slug]/page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -120,7 +119,7 @@
       <workItem from="1735941128869" duration="145000" />
       <workItem from="1735943490705" duration="19291000" />
       <workItem from="1736276596329" duration="2950000" />
-      <workItem from="1736285369727" duration="4364000" />
+      <workItem from="1736285369727" duration="4762000" />
     </task>
     <task id="LOCAL-00001" summary="refactor pages to add content from CMS, refactor fetching to use one fetching function for both page content and project/skills">
       <option name="closed" value="true" />
@@ -290,7 +289,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736288873979</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Resolving Error">
+      <option name="closed" value="true" />
+      <created>1736290446871</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1736290446871</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,6 +332,7 @@
     <MESSAGE value="Refactor `slugProps` type and improve code readability.&#10;&#10;Updated `slugProps` type in `page.tsx` to a more flexible `any` type. Commented out the `generateMetadata` function for future review. Adjusted `.idea/workspace.xml` to fix formatting by adding a missing line break, enhancing consistency and readability." />
     <MESSAGE value="Updated text in VOTD function&#10;added function to automactically update year in footer&#10;Changes caching in fetch function" />
     <MESSAGE value="Remove await from Slug= params" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove await from Slug= params" />
+    <MESSAGE value="Resolving Error" />
+    <option name="LAST_COMMIT_MESSAGE" value="Resolving Error" />
   </component>
 </project>
