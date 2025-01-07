@@ -1,23 +1,37 @@
 import {urlFor} from "@/sanity/lib/image";
 import {Image} from "next-sanity/image";
 import {fetchFunction, fetchSkillBySlug} from "@/functions/fetchFunctions";
-import {Metadata} from "next/types";
 
 // Fetching data for Metadata
-export const generateMetadata = async ({params}: { params: { slug: string } }): Promise<Metadata> => {
-    const {slug} = params;
-    const projectFetchParams = await fetchFunction(fetchSkillBySlug({slug}));
-    const {title, skill_description} = projectFetchParams[0];
-    return {
-        title: `${title} | Bernard Clarke | Front-end Javascript React developer`,
-        description: skill_description,
-    };
-};
+// export const generateMetadata = async ({params}: { params: { slug: string } }): Promise<Metadata> => {
+//
+//     if (params instanceof Promise) {
+//         console.error("params is a Promise new**********");
+//     } else {
+//         console.log("params is not a Promise new**********");
+//     }
+//
+//     const {slug} = params;
+//     const projectFetchParams = await fetchFunction(fetchSkillBySlug({slug}));
+//     const {title, skill_description} = projectFetchParams[0];
+//     return {
+//         title: `${title} | Bernard Clarke | Front-end Javascript React developer`,
+//         description: skill_description,
+//     };
+// };
 
-export default async function SkillPage({params}: { params: { slug: string } }) {
+export default async function SkillPage({params}: { params: Promise<{ slug: string }> }) {
+
+    // if (params instanceof Promise) {
+    //     console.error("params is a Promise new**********");
+    // } else {
+    //     console.log("params is not a Promise new**********");
+    // }
+
 
     //Fetch skill data
-    const {slug} = params;
+    const resolveParams = await params;
+    const {slug} = resolveParams;
     const skillResults = await fetchFunction(fetchSkillBySlug({slug}));
     const {title, skill_description, features, skill_image, ...rest} = skillResults[0];
 
