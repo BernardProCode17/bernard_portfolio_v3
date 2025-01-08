@@ -4,19 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f59ed1ef-aabb-4eae-b75f-2592f34c0098" name="Changes" comment="Resolving Errors fixing bugs">
+    <list default="true" id="f59ed1ef-aabb-4eae-b75f-2592f34c0098" name="Changes" comment="Testing lottie changes - remove lottie component from lottie file to individual files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/studioAdmin/[[...tool]]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/studioAdmin/[[...tool]]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home_page_components/BriefStatment.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home_page_components/BriefStatment.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home_page_components/HomePageBanner.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home_page_components/HomePageBanner.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home_page_components/HomePageProjects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home_page_components/HomePageProjects.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home_page_components/HomePageSkills.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home_page_components/HomePageSkills.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/minor components/lotties/lottie.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/minor components/lotties/lottie.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript JSX File" />
+      </list>
+    </option>
   </component>
   <component name="FormatOnSaveOptions">
     <option name="myRunOnSave" value="true" />
@@ -127,7 +130,7 @@
       <workItem from="1736276596329" duration="2950000" />
       <workItem from="1736285369727" duration="5500000" />
       <workItem from="1736298440271" duration="399000" />
-      <workItem from="1736307007368" duration="1517000" />
+      <workItem from="1736307007368" duration="2573000" />
     </task>
     <task id="LOCAL-00001" summary="refactor pages to add content from CMS, refactor fetching to use one fetching function for both page content and project/skills">
       <option name="closed" value="true" />
@@ -313,7 +316,23 @@
       <option name="project" value="LOCAL" />
       <updated>1736290980321</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Resolving Errors fixing bugs">
+      <option name="closed" value="true" />
+      <created>1736308610958</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1736308610958</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Testing lottie changes - remove lottie component from lottie file to individual files">
+      <option name="closed" value="true" />
+      <created>1736309733352</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1736309733352</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -351,6 +370,7 @@
     <MESSAGE value="Resolving Error" />
     <MESSAGE value="Resolving Errors" />
     <MESSAGE value="Resolving Errors fixing bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Resolving Errors fixing bugs" />
+    <MESSAGE value="Testing lottie changes - remove lottie component from lottie file to individual files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Testing lottie changes - remove lottie component from lottie file to individual files" />
   </component>
 </project>
