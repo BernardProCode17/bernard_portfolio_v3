@@ -8,9 +8,7 @@ export default function BannerLottie() {
     const [isClient, setIsClient] = useState(false);
 
     useEffect(() => {
-        if (typeof window !== 'undefined') {
-            setIsClient(true);
-        }
+        setIsClient(true);
     }, []);
 
     const options = {
@@ -20,15 +18,10 @@ export default function BannerLottie() {
         renderSettings: {preserveAspectRatio: 'xMidYMid slice'}
     };
 
+    if (!isClient) return null;
     return (
         <div className="home_header-lottie">
-            {isClient && (
-                <Lottie
-                    options={options}
-                    width={'100%'}
-                    isClickToPauseDisabled={true}
-                />
-            )}
+            <Lottie options={options} width={'100%'} isClickToPauseDisabled={true}/>
         </div>
     );
 }
