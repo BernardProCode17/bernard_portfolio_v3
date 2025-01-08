@@ -2,7 +2,8 @@ import {client} from '@/sanity/lib/client';
 
 
 export async function fetchFunction(query: string): Promise<any> {
-    const option: { next: { revalidate: 259200 } } = {next: {revalidate: 259200}};
+    const option: { next: { revalidate: 60 } } = {next: {revalidate: 60}};
+    // const option: { next: { revalidate: 259200 } } = {next: {revalidate: 259200}};
 
     return await client.fetch(query, {}, option);
 }
