@@ -1,6 +1,5 @@
 import Link from "next/link";
 import PageSections from "../minor components/PageSections";
-import {ProjectsLottie} from "../minor components/lotties/lottie";
 import HomeProjectsDisplay from "./HomeProjectsDisplay";
 
 type PageDataProjects = {
@@ -18,7 +17,7 @@ export default function HomePageProjects({pageData}: { pageData: PageDataProject
             <h2 className="home_projects-title">{Title}</h2>
             <p className="home_projects-content">{Content}</p>
 
-            <ProjectsLottie display='removeLottie'/>
+            {/*<ProjectsLottie display='removeLottie'/>*/}
             <HomeProjectsDisplay/>
 
             <Link href='projects' className="link home_project-link">{Links}</Link>

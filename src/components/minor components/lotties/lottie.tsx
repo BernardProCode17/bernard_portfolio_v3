@@ -1,5 +1,4 @@
 'use client'
-
 import React, {useEffect, useState} from 'react';
 import Lottie from 'react-lottie'
 import Jslottie from '../../../assets/javascript_lottie.json'
@@ -41,23 +40,6 @@ export function JSLottie() {
     );
 }
 
-
-// export function JSLottie() {
-//
-//    const options = {
-//       loop: true,
-//       autoplay: true,
-//       animationData: Jslottie,
-//       renderSettings: { preserveAspectRatio: 'xMidYMIs slice' }
-//    }
-//
-//    return (
-//       <div className="home_header-lottie">
-//          clientDocument && <Lottie options={options} width={'100%'} isClickToPauseDisabled={true} />
-//       </div>
-//    )
-// }
-
 export function ProjectsLottie({display}: LottieProps) {
 
     const [isClient, setIsClient] = useState(false);
@@ -67,6 +49,7 @@ export function ProjectsLottie({display}: LottieProps) {
             setIsClient(true);
         }
     }, []);
+
     const options = {
         loop: true,
         autoplay: true,
@@ -193,7 +176,7 @@ export function SkillImageLottie(lottieFile: object) {
 
     return (
         <div className="skill_image">
-            {isClient && clientDocument && <Lottie options={options} width={200}/>}
+            {clientDocument && <Lottie options={options} width={200}/>}
         </div>
     )
 }

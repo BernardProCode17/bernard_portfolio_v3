@@ -11,7 +11,6 @@ export default function BriefStatement({pageData}: { pageData: pageDataBrief }) 
         <PageSections cssClass="brief_statement">
             <h2 className="statement_title">{Title}</h2>
             <p className="statement_content">{Content}</p>
-
         </PageSections>
     )
 }
