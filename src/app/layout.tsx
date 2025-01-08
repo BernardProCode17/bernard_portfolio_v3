@@ -6,6 +6,7 @@ import Footer from "@/components/header_footer/Footer";
 import {Suspense} from "react";
 import Loading from "./loading";
 import {SpeedInsights} from "@vercel/speed-insights/react"
+import {Analytics} from "@vercel/analytics/react"
 
 export const metadata: Metadata = {
     title: "Bernard Clarke | Front-end Javascript React developer",
@@ -24,6 +25,7 @@ export default function RootLayout({children,}: { children: React.ReactNode; }) 
         <Suspense fallback={<Loading/>}>
             {children}
             <SpeedInsights/>
+            <Analytics/>
         </Suspense>
         <Footer/>
         </body>

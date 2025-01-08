@@ -1,5 +1,6 @@
 import HeadingSection from "@/components/minor components/HeadingSection";
 import Link from "next/link";
+import BannerLottie from "@/components/minor components/lotties/BannerLottie";
 
 type pageDataBanner = {
     H1: string,
@@ -22,7 +23,7 @@ export default function HomePageBanner({pageData}: { pageData: pageDataBanner })
                 </div>
 
                 {/* Jesus */}
-                {/*<JSLottie/>*/}
+                <BannerLottie/>
 
                 <div className="home_header-links">
                     <Link href='/projects' className="home_header_links-projects">{Links[0]}</Link>
