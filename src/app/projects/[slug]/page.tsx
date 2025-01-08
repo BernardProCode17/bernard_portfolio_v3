@@ -7,23 +7,23 @@ import HeadingSection from '@/components/minor components/HeadingSection';
 import ProjectLink from '@/components/minor components/Link';
 import ContentArticle from '@/components/project_page-component/ContentArticle';
 import Connection from '@/components/minor components/Connection';
+import {Metadata} from "next/types";
 
 type slugProps = Promise<any>;
 
 // Fetching data for Metadata
-// export const generateMetadata = async ({params}: { params: slugProps }): Promise<Metadata> => {
-//     const {slug} = await params;
-//     const projectFetchParams = await fetchFunction(fetchProjectBySlug(slug));
-//     const {title, long_description} = projectFetchParams[0];
-//     return {
-//         title: `${title} | Bernard Clarke | Front-end Javascript React developer`,
-//         description: long_description.content,
-//     };
-// };
+export const generateMetadata = async ({params}: { params: slugProps }): Promise<Metadata> => {
+    const {slug} = await params;
+    const projectFetchParams = await fetchFunction(fetchProjectBySlug(slug));
+    const {title, long_description} = projectFetchParams[0];
+    return {
+        title: `${title} | Bernard Clarke | Front-end Javascript React developer`,
+        description: long_description.content,
+    };
+};
 
 export default async function Project({params}: { params: slugProps }) {
 
-    // console.log('params Props', params.slug)
     const {slug} = await params;
     const projectFetchParams = await fetchFunction(fetchProjectBySlug(slug));
 

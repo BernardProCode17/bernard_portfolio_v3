@@ -14,8 +14,6 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  /* border-bottom: 5px solid var(--tertiary-color); */
-  width: 100%;
 }
 
 .social_connection {

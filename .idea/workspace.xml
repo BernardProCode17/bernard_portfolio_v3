@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f59ed1ef-aabb-4eae-b75f-2592f34c0098" name="Changes" comment="Testing lottie changes - remove lottie component from lottie file to individual files" />
+    <list default="true" id="f59ed1ef-aabb-4eae-b75f-2592f34c0098" name="Changes" comment="Updated the fetch function cache revalidation to 3 days&#10;removed commented codes&#10;fixes&#10;added notes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Notes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/projects/[slug]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/projects/[slug]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/VOTD/VOTD.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/VOTD/VOTD.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home_page_components/HomePageBanner.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home_page_components/HomePageBanner.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/minor components/MenuButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/minor components/MenuButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/project_page-component/ContentArticle.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/project_page-component/ContentArticle.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/functions/fetchFunctions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/functions/fetchFunctions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/functions/function.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/connection.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/connection.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/sample-css-structure.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/section.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/section.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/skillsPageStyles/skillPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/skillsPageStyles/skillPage.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -126,7 +142,7 @@
       <workItem from="1736276596329" duration="2950000" />
       <workItem from="1736285369727" duration="5500000" />
       <workItem from="1736298440271" duration="399000" />
-      <workItem from="1736307007368" duration="2995000" />
+      <workItem from="1736307007368" duration="5201000" />
     </task>
     <task id="LOCAL-00001" summary="refactor pages to add content from CMS, refactor fetching to use one fetching function for both page content and project/skills">
       <option name="closed" value="true" />
@@ -336,7 +352,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736309843384</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Testing lottie changes - remove lottie component from lottie file to individual files">
+      <option name="closed" value="true" />
+      <created>1736310467150</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1736310467150</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -375,6 +399,7 @@
     <MESSAGE value="Resolving Errors" />
     <MESSAGE value="Resolving Errors fixing bugs" />
     <MESSAGE value="Testing lottie changes - remove lottie component from lottie file to individual files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Testing lottie changes - remove lottie component from lottie file to individual files" />
+    <MESSAGE value="Updated the fetch function cache revalidation to 3 days&#10;removed commented codes&#10;fixes&#10;added notes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated the fetch function cache revalidation to 3 days&#10;removed commented codes&#10;fixes&#10;added notes" />
   </component>
 </project>

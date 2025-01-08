@@ -3,8 +3,8 @@
 import {Dispatch, SetStateAction, useEffect, useState} from "react"
 import {IoClose} from "react-icons/io5";
 import Link from 'next/link'
-
 import {clipboard} from "@/functions/VOTD";
+
 // exports
 export let setModalexport: Dispatch<SetStateAction<boolean>>;
 export let Modalexport: boolean;
