@@ -1,8 +1,6 @@
-add privacy ploies card
-
-add social media links and icons from sanity
-
-/*    *************************************************** Fix  **********************************************     */
-add filter buttons for skills page
-
+add privacy policy card
 fix contact form to send email
+write content for projects
+update styles 
+fix lottie files to display
+optimize performance
