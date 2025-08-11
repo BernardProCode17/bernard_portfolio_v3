@@ -1,5 +1,5 @@
 .header {
-    background-color: var(--primary-color);
+    background-color: transparent;
     padding: 1.25rem;
     display: flex;
     flex-direction: row;
@@ -139,7 +139,17 @@
     }
 
     .header_logo img {
-        width: 6.25rem;
+        width: 20rem;
         height: 6.25rem;
+    }
+
+
+    .header_button {
+        margin-right: 2rem;
+    }
+
+    .header_icon {
+        width: 4rem;
+        height: 4rem;
     }
 }
