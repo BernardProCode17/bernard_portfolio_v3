@@ -2,8 +2,8 @@
 import {useEffect, useState} from "react";
 import Image from "next/image";
 import Link from "next/link";
-import DesktopLogo from "../../assets/Portfolio Logo - Bernard.svg";
-import MobileLogo from "../../assets/Portfolio Logo - Be.svg";
+import DesktopLogo from "../../assets/portfolio_logo-Bernard.svg";
+import MobileLogo from "../../assets/portfolio_logo-Be.svg";
 
 const logoDesktop = DesktopLogo;
 const logoMobile = MobileLogo;
