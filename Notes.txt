@@ -4,3 +4,11 @@ write content for projects
 update styles 
 fix lottie files to display
 optimize performance
+
+
+* Break Points*
+'xs': '320px',   // 20rem
+'sm': '640px',   // 40rem
+'md': '768px',   // 48rem
+'lg': '1024px',  // 64rem
+'xl': '1280px',  // 80rem

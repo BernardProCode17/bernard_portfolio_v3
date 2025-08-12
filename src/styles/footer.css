@@ -27,11 +27,16 @@
 }
 
 .footer_logo {
-    margin-bottom: 0rem;
+    margin-bottom: 1rem;
 }
+
 
 /* footer Navigation */
 .footer_nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border-bottom: 5px solid var(--tertiary-color);
     width: 100%;
 }
@@ -43,8 +48,6 @@
     justify-content: center;
     align-items: center;
     padding: 0;
-    font-size: 1.3em;
-    color: var(--secondary-color);
     width: 100%;
 }
 
@@ -61,10 +64,10 @@
 .footer_nav-link:hover {
     background-color: var(--secondary-color);
     color: var(--text-color);
-    border-radius: 5px;
+    border-radius: 2px;
 }
 
-/* socia connections */
+/* social connections */
 .footer_social-container {
     display: flex;
     justify-content: center;
@@ -113,30 +116,27 @@
     row-gap: 0.3rem;
     align-items: center;
     color: var(--secondary-color);
-    margin: 1rem 0rem;
+    margin: 1rem 0;
 }
 
 .footer_details-author {
-    font-weight: 700;
+    font-weight: 500;
     font-size: 1.25rem;
-    margin: 0;
+    color: var(--text-color);
 }
 
 .footer_details-made-with {
     text-align: center;
-    margin: 0.3rem 0rem;
-    background-color: var(--secondary-color);
+    margin: 0.3rem 0;
     color: var(--text-color);
-    padding: 0.3rem;
     border-radius: 0.3125rem;
-    width: 100%;
+    width: 80%;
 }
 
 .footer_details-made-tech {
     display: block;
-    margin: 0.7rem auto 0;
-    font-size: 1.157rem;
-    width: max-content;
+    font-size: 0.7rem;
+    /*width: max-content;*/
     text-align: center;
 }
 
@@ -161,11 +161,9 @@
     }
 
     .footer_logo {
-        margin-bottom: 0rem;
-        width: 4.375rem;
-        height: 4.375rem;
-        flex-grow: 1;
+        margin-bottom: 0;
     }
+
 
     .footer_nav {
         flex-grow: 1;
@@ -173,7 +171,7 @@
 
     .footer_ul {
         flex-wrap: nowrap;
-        justify-content: end;
+        justify-content: center;
         margin-right: 2rem;
     }
 
@@ -195,12 +193,12 @@
     }
 }
 
-@media (min-width: 80rem) {
+@media (min-width: 64rem) {
 
     .footer_logo-container,
     .footer_nav,
     .footer_social {
-        flex-basis: 15%;
+        width: auto;
     }
 
     .footer_logo-container,
@@ -210,7 +208,7 @@
 
     .footer_ul {
         justify-content: center;
-        margin: 0rem auto;
+        margin: 0 auto;
     }
 
     .footer_details-made-with {
@@ -219,5 +217,19 @@
 
     .footer_sections_container {
         flex-direction: row;
+        padding: 0 2rem;
+    }
+
+    .footer_logo a img {
+        width: auto;
+        height: 7rem;
+    }
+
+    .footer .social_connection_container {
+        width: auto;
+    }
+
+    .footer_nav {
+        width: auto;
     }
 }
