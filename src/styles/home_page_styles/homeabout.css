@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--secondary-color);
+    /*background-color: var(--secondary-color);*/
     color: inherit;
     border: none;
 }
@@ -23,7 +23,7 @@
 .home_about_text {
     text-align: center;
     width: 100%;
-    margin: 1rem 0rem;
+    margin: 1rem 0;
     padding-left: 3%;
 }
 
@@ -39,6 +39,7 @@
     margin-top: 1.5rem;
     text-decoration: underline;
 }
+
 /* .home_about_text-em:hover {
     text-decoration: underline;
 } */
