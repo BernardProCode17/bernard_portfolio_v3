@@ -1,5 +1,6 @@
 import HeadingSection from "@/components/minor components/HeadingSection";
 import {fetchFunction, fetchPageContent_contact} from "@/functions/fetchFunctions";
+import "@/styles/contactPageStyles/contact-form.css";
 
 export default async function ContactLayout({children}: Readonly<{ children: React.ReactNode; }>) {
 
