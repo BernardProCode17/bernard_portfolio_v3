@@ -130,7 +130,7 @@ export function DevelopmentToolsLottie() {
 
 export function SkillImageLottie(lottieFile: object) {
 
-    // const [isClient, setIsClient] = useState(false);
+    const [isClient, setIsClient] = useState(false);
 
     useEffect(() => {
         if (typeof window !== 'undefined') {
@@ -147,7 +147,7 @@ export function SkillImageLottie(lottieFile: object) {
 
     return (
         <div className="skill_image">
-            {clientDocument && <Lottie options={options} width={200}/>}
+            {isClient && clientDocument && <Lottie options={options} width={200}/>}
         </div>
     )
 }
