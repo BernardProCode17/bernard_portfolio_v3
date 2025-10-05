@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f59ed1ef-aabb-4eae-b75f-2592f34c0098" name="Changes" comment="Updated skills lottie">
+    <list default="true" id="f59ed1ef-aabb-4eae-b75f-2592f34c0098" name="Changes" comment="Updated skills lottie - removed isClient and added next/dynamic">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/minor components/lotties/lottie.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/minor components/lotties/lottie.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -155,7 +156,7 @@
       <workItem from="1754867206797" duration="827000" />
       <workItem from="1754875400552" duration="4109000" />
       <workItem from="1755035204818" duration="4345000" />
-      <workItem from="1759686132150" duration="2561000" />
+      <workItem from="1759686132150" duration="4138000" />
     </task>
     <task id="LOCAL-00001" summary="refactor pages to add content from CMS, refactor fetching to use one fetching function for both page content and project/skills">
       <option name="closed" value="true" />
@@ -429,7 +430,23 @@
       <option name="project" value="LOCAL" />
       <updated>1759688407520</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Updated skills lottie - removed clientDocument">
+      <option name="closed" value="true" />
+      <created>1759688748927</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1759688748927</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Updated skills lottie - removed isClient and added next/dynamic">
+      <option name="closed" value="true" />
+      <created>1759689586342</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1759689586342</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -447,8 +464,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added comment to add view more projects from the project page" />
-    <MESSAGE value="Refactor skills page layout and update styles&#10;&#10;Modified `.skills_container` to use a responsive grid layout instead of flex, improving alignment and scalability. Adjusted media queries for better mobile responsiveness and polished styles across related components." />
     <MESSAGE value="Refactor skills page layout and update styles&#10;&#10;Replaced flex with a responsive grid for improved alignment and scalability on the skills page. Modified media queries for better mobile responsiveness and polished list styles for consistency. Adjusted fetching function to enhance caching behavior." />
     <MESSAGE value="Add @vercel/speed-insights package and integrate in layout&#10;&#10;Integrated the SpeedInsights React component in the app's layout for performance insights. Updated `package.json` and `package-lock.json` to include the new dependency. Adjusted formatting for consistency in the `RootLayout` component." />
     <MESSAGE value="Refactor fetch function and clean up project code&#10;&#10;Updated fetch revalidation caching from 3600 to 60 seconds to improve data freshness. Removed unnecessary declarations and console logs, simplifying the codebase. Addressed metadata generation and parameter handling for better readability and performance in project and skills pages." />
@@ -472,18 +487,8 @@
     <MESSAGE value="Added lotties on homepage for testing" />
     <MESSAGE value="-message" />
     <MESSAGE value="Updated skills lottie" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated skills lottie" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/minor components/lotties/lottie.tsx</url>
-          <line>17</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Updated skills lottie - removed clientDocument" />
+    <MESSAGE value="Updated skills lottie - removed isClient and added next/dynamic" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated skills lottie - removed isClient and added next/dynamic" />
   </component>
 </project>

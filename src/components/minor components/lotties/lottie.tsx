@@ -8,6 +8,7 @@ import skillLottie from '../../../assets/skills_graph_lottie.json'
 import developmentSkills from '../../../assets/development_skills_lottie.json'
 import communicationSkills from '../../../assets/communication_skill_lottie.json'
 import developmentTools from '../../../assets/developement_tools_skills_lottie.json'
+import Jslottie from "@/assets/javascript_lottie.json";
 
 // type LottieProps = { display: string }
 //const clientDocument = typeof window !== 'undefined'
@@ -17,6 +18,23 @@ const Lottie = dynamic(() => import('react-lottie'), {
         loading: () => <p>Loading...</p>,
     }
 );
+
+
+export function BannerLottie() {
+    const options = {
+        loop: true,
+        autoplay: true,
+        animationData: Jslottie,
+        renderSettings: {preserveAspectRatio: 'xMidYMid slice'}
+    };
+
+
+    return (
+        <div className="home_header-lottie">
+            <Lottie options={options} width={'100%'} isClickToPauseDisabled={true}/>
+        </div>
+    );
+}
 
 
 export function ProjectsLottie() {
