@@ -1,25 +1,9 @@
 import BriefStatement from "@/components/home_page_components/BriefStatment";
 import HomeAbout from "@/components/home_page_components/HomeAbout";
-// import HomePageProjects from "@/components/home_page_components/HomePageProjects";
-// import HomePageSkills from "@/components/home_page_components/HomePageSkills";
-// import HomePageBanner from "@/components/home_page_components/HomePageBanner";
-import {fetchFunction, fetchPageContent_home} from "@/functions/fetchFunctions";
-import dynamic from 'next/dynamic';
+import { fetchFunction, fetchPageContent_home } from "@/functions/fetchFunctions";
 
-const HomePageProjects = dynamic(
-    () => import("@/components/home_page_components/HomePageProjects"),
-    {ssr: false}
-);
-
-const HomePageSkills = dynamic(
-    () => import("@/components/home_page_components/HomePageSkills"),
-    {ssr: false}
-);
-
-const HomePageBanner = dynamic(
-    () => import("@/components/home_page_components/HomePageBanner"),
-    {ssr: false}
-);
+// Import client components with dynamic imports to ensure proper hydration
+import { HomePageProjects, HomePageSkills, HomePageBanner } from "@/components/DynamicClientWrapper";
 
 
 export default async function Home() {
@@ -32,7 +16,7 @@ export default async function Home() {
         <main>
 
             {/* Home Page Banner Section */}
-            <HomePageBanner pageData={bannerSection}/>
+            <HomePageBanner pageData={bannerSection} />
 
             {/*  Brief Statement Section*/}
             <BriefStatement pageData={StatementSection}/>
@@ -41,13 +25,13 @@ export default async function Home() {
             <HomePageProjects pageData={projectSection}/>
 
             {/* Skills Section */}
-            <HomePageSkills pageData={skillSection}/>
+            <HomePageSkills pageData={skillSection} />
 
             {/* skills section span border */}
             <span className="home_skills-span"></span>
 
             {/* About Section */}
-            <HomeAbout pageData={aboutSection}/>
+            <HomeAbout pageData={aboutSection} />
         </main>
     );
 }

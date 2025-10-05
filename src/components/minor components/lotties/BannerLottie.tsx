@@ -2,7 +2,7 @@
 
 import React, {useEffect, useState} from "react";
 import Jslottie from "@/assets/javascript_lottie.json";
-import Lottie from "react-lottie";
+import { Lottie } from "@/components/DynamicClientWrapper";
 
 export default function BannerLottie() {
     const [isClient, setIsClient] = useState(false);

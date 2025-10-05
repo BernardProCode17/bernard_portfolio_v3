@@ -1,3 +1,5 @@
+'use client'
+
 import { ProjectProp } from "@/types/projectsTypes";
 import { urlFor } from "@/sanity/lib/image";
 import { Image } from "next-sanity/image";

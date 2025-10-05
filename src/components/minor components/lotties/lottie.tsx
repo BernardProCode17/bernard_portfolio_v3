@@ -1,26 +1,21 @@
 'use client'
-// import React, {useEffect, useState} from 'react';
-// import Lottie from 'react-lottie'
-import React from 'react';
-import dynamic from 'next/dynamic'
+import React, { useEffect, useState } from 'react';
 import projectsLottie from '../../../assets/project_folder_lottie.json'
 import skillLottie from '../../../assets/skills_graph_lottie.json'
 import developmentSkills from '../../../assets/development_skills_lottie.json'
 import communicationSkills from '../../../assets/communication_skill_lottie.json'
 import developmentTools from '../../../assets/developement_tools_skills_lottie.json'
 import Jslottie from "@/assets/javascript_lottie.json";
-
-// type LottieProps = { display: string }
-//const clientDocument = typeof window !== 'undefined'
-
-const Lottie = dynamic(() => import('react-lottie'), {
-        ssr: false,
-        loading: () => <p>Loading...</p>,
-    }
-);
+import { Lottie } from '@/components/DynamicClientWrapper';
 
 
 export function BannerLottie() {
+    const [isClient, setIsClient] = useState(false);
+    
+    useEffect(() => {
+        setIsClient(true);
+    }, []);
+    
     const options = {
         loop: true,
         autoplay: true,
@@ -28,7 +23,7 @@ export function BannerLottie() {
         renderSettings: {preserveAspectRatio: 'xMidYMid slice'}
     };
 
-
+    if (!isClient) return null;
     return (
         <div className="home_header-lottie">
             <Lottie options={options} width={'100%'} isClickToPauseDisabled={true}/>
@@ -38,14 +33,11 @@ export function BannerLottie() {
 
 
 export function ProjectsLottie() {
+    const [isClient, setIsClient] = useState(false);
 
-    // const [isClient, setIsClient] = useState(false);
-
-    // useEffect(() => {
-    //     if (typeof window !== 'undefined') {
-    //         setIsClient(true);
-    //     }
-    // }, []);
+    useEffect(() => {
+        setIsClient(true);
+    }, []);
 
     const options = {
         loop: true,
@@ -54,6 +46,7 @@ export function ProjectsLottie() {
         renderSettings: {preserveAspectRatio: 'xMidYMIs slice'}
     }
 
+    if (!isClient) return null;
     return (
         <div className={`home_projects-lottie`}>
             <Lottie options={options} width={'100%'} isClickToPauseDisabled={true}/>
@@ -62,14 +55,11 @@ export function ProjectsLottie() {
 }
 
 export function SkillsLottie() {
-
-    // const [isClient, setIsClient] = useState(false);
-    //
-    // useEffect(() => {
-    //     if (typeof window !== 'undefined') {
-    //         setIsClient(true);
-    //     }
-    // }, []);
+    const [isClient, setIsClient] = useState(false);
+    
+    useEffect(() => {
+        setIsClient(true);
+    }, []);
 
     const options = {
         loop: true,
@@ -78,6 +68,7 @@ export function SkillsLottie() {
         renderSettings: {preserveAspectRatio: 'xMidYMIs slice'}
     }
 
+    if (!isClient) return null;
     return (
         <div className="home_skills-lottie">
             <Lottie options={options} width={200} isClickToPauseDisabled={true}/>
@@ -86,14 +77,11 @@ export function SkillsLottie() {
 }
 
 export function DevelopmentSkillsLottie() {
-
-    // const [isClient, setIsClient] = useState(false);
-    //
-    // useEffect(() => {
-    //     if (typeof window !== 'undefined') {
-    //         setIsClient(true);
-    //     }
-    // }, []);
+    const [isClient, setIsClient] = useState(false);
+    
+    useEffect(() => {
+        setIsClient(true);
+    }, []);
 
     const options = {
         loop: true,
@@ -102,6 +90,7 @@ export function DevelopmentSkillsLottie() {
         renderSettings: {preserveAspectRatio: 'xMidYMIs slice'}
     }
 
+    if (!isClient) return null;
     return (
         <div className="home_skills-lottie home_skills_lottie-display">
             <Lottie options={options} width={200} isClickToPauseDisabled={true}/>
@@ -110,13 +99,11 @@ export function DevelopmentSkillsLottie() {
 }
 
 export function CommunicationSkillsLottie() {
-    // const [isClient, setIsClient] = useState(false);
-    //
-    // useEffect(() => {
-    //     if (typeof window !== 'undefined') {
-    //         setIsClient(true);
-    //     }
-    // }, []);
+    const [isClient, setIsClient] = useState(false);
+    
+    useEffect(() => {
+        setIsClient(true);
+    }, []);
 
     const options = {
         loop: true,
@@ -125,6 +112,7 @@ export function CommunicationSkillsLottie() {
         renderSettings: {preserveAspectRatio: 'xMidYMIs slice'}
     }
 
+    if (!isClient) return null;
     return (
         <div className="home_skills-lottie home_skills_lottie-display">
             <Lottie options={options} width={200} isClickToPauseDisabled={true}/>
@@ -133,14 +121,11 @@ export function CommunicationSkillsLottie() {
 }
 
 export function DevelopmentToolsLottie() {
-
-    // const [isClient, setIsClient] = useState(false);
-    //
-    // useEffect(() => {
-    //     if (typeof window !== 'undefined') {
-    //         setIsClient(true);
-    //     }
-    // }, []);
+    const [isClient, setIsClient] = useState(false);
+    
+    useEffect(() => {
+        setIsClient(true);
+    }, []);
 
     const options = {
         loop: true,
@@ -149,6 +134,7 @@ export function DevelopmentToolsLottie() {
         renderSettings: {preserveAspectRatio: 'xMidYMIs slice'}
     }
 
+    if (!isClient) return null;
     return (
         <div className="home_skills-lottie home_skills_lottie-display">
             <Lottie options={options} width={200}/>
@@ -157,14 +143,11 @@ export function DevelopmentToolsLottie() {
 }
 
 export function SkillImageLottie(lottieFile: object) {
-
-    // const [isClient, setIsClient] = useState(false);
-    //
-    // useEffect(() => {
-    //     if (typeof window !== 'undefined') {
-    //         setIsClient(true);
-    //     }
-    // }, []);
+    const [isClient, setIsClient] = useState(false);
+    
+    useEffect(() => {
+        setIsClient(true);
+    }, []);
 
     const options = {
         loop: true,
@@ -173,6 +156,7 @@ export function SkillImageLottie(lottieFile: object) {
         renderSettings: {preserveAspectRatio: 'xMidYMIs slice'}
     }
 
+    if (!isClient) return null;
     return (
         <div className="skill_image">
             <Lottie options={options} width={200}/>
