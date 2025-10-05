@@ -9,10 +9,14 @@ import {SpeedInsights} from "@vercel/speed-insights/react";
 import {Analytics} from "@vercel/analytics/react";
 import { inter, poppins, roboto } from "@/styles/fonts";
 
+export const viewport = {
+    width: "device-width",
+    initialScale: 1,
+};
+
 export const metadata: Metadata = {
     title: "Bernard Clarke | Front-end Javascript React developer",
     description: "Bernard Clarke is a front-end Javascript React developer based in vancouver, BC. I have a passion for creating beautiful, responsive, and accessible web applications and website. I'm currently looking for an opportunity to work with react, typescript, and next.js to create amazing application and develop my skills to become a full stack developer.",
-    viewport: "width=device-width, initial-scale=1",
     robots: {
         index: true,
         follow: true,

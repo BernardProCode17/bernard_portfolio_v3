@@ -5,9 +5,11 @@
   "scripts": {
     "dev": "npm install cross-env --save-dev && cross-env NODE_OPTIONS=--max_old_space_size=4096 next dev",
     "build": "next build",
+    "build:prod": "powershell -ExecutionPolicy Bypass -File .\\scripts\\build-prod.bat",
     "start": "next start",
     "lint": "next lint",
     "analyze": "cross-env ANALYZE=true next build",
+    "analyze:report": "npm run analyze && node scripts/analyze-bundle.js",
     "optimize-images": "node scripts/optimize-images.js"
   },
   "dependencies": {

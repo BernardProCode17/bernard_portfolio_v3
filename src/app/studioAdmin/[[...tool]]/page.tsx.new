@@ -1,0 +1,50 @@
+// File: src/app/studioAdmin/[[...tool]]/page.tsx
+// This page is dynamically imported only when someone visits the admin route
+
+export const dynamic = 'force-dynamic';
+export const dynamicParams = true;
+export const revalidate = 0;
+
+// Import the Studio component only when needed
+import dynamic from 'next/dynamic';
+
+// Create a loading component for better UX
+const Loading = () => (
+  <div style={{ 
+    padding: '100px 25px',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    height: '100vh',
+  }}>
+    <h2>Loading Sanity Studio...</h2>
+    <div 
+      style={{ 
+        width: '50px',
+        height: '50px',
+        border: '5px solid #f3f3f3',
+        borderTop: '5px solid #3498db',
+        borderRadius: '50%',
+        animation: 'spin 1s linear infinite',
+        marginTop: '20px'
+      }} 
+    />
+    <style>{`
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    `}</style>
+  </div>
+);
+
+// Dynamic import with SSR disabled to reduce initial load time
+const Studio = dynamic(() => import('./Studio'), { 
+  ssr: false,
+  loading: Loading
+});
+
+export default function StudioPage() {
+  return <Studio />;
+}

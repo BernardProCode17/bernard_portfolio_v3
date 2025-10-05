@@ -20,11 +20,18 @@ const LoadingPlaceholder = ({ height = '200px', width = '100%' }) => (
   </div>
 );
 
-// Dynamically import the Lottie library with SSR disabled and improved loading state
-export const Lottie = dynamic(() => import('react-lottie'), {
-  ssr: false,
-  loading: () => <LoadingPlaceholder height="300px" />
-});
+// Use only one Lottie implementation - lighter weight dotlottie-react instead of react-lottie
+export const Lottie = dynamic(
+  () => import('@lottiefiles/dotlottie-react').then(mod => ({
+    default: (props: any) => {
+      const { DotLottiePlayer } = mod as any;
+      return <DotLottiePlayer {...props} />;
+    }
+  })), {
+    ssr: false,
+    loading: () => <LoadingPlaceholder height="300px" />
+  }
+);
 
 // Dynamically import components with improved loading states and priority settings
 export const HomePageProjects = dynamic(
