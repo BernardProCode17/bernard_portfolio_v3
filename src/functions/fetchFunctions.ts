@@ -1,33 +1,11 @@
 import {client} from '@/sanity/lib/client';
 
-// Cache responses by query to improve performance
-const queryCache = new Map<string, { data: any, timestamp: number }>();
-const CACHE_TTL = 3600 * 1000; // 1 hour in milliseconds
-
+// Simplify fetchFunction to original implementation
 export async function fetchFunction(query: string): Promise<any> {
-    // For production, use longer cache time (1 hour)
-    // For development, use shorter cache time (60 seconds)
-    const isProd = process.env.NODE_ENV === 'production';
-    const option = {
-        next: {
-            revalidate: isProd ? 3600 : 60, // 1 hour in production, 1 minute in dev
-            tags: ['sanity-content']
-        }
-    };
+    const option: { next: { revalidate: 60 } } = {next: {revalidate: 60}};
+    // const option: { next: { revalidate: 259200 } } = {next: {revalidate: 259200}};
 
-    // Use memory cache to avoid repeated Sanity API calls within the same session
-    const cacheKey = query;
-    const cachedItem = queryCache.get(cacheKey);
-    const now = Date.now();
-    
-    if (cachedItem && (now - cachedItem.timestamp) < CACHE_TTL) {
-        return cachedItem.data;
-    }
-    
-    const result = await client.fetch(query, {}, option);
-    queryCache.set(cacheKey, { data: result, timestamp: now });
-    
-    return result;
+    return await client.fetch(query, {}, option);
 }
 
 export const fetchProjectQuery: string = `*[_type == 'projects'] {

@@ -1,15 +1,10 @@
 import { createClient } from 'next-sanity'
 import { apiVersion, dataset, projectId } from '../env'
 
-// Create a more optimized client with proper CDN usage to improve performance
+// Revert to simpler client configuration to fix compatibility issues
 export const client = createClient({
   projectId,
   dataset,
   apiVersion,
-  useCdn: process.env.NODE_ENV === 'production', // Use CDN in production for better performance
-  perspective: 'published',
-  stega: {
-    enabled: process.env.NODE_ENV === 'development',
-    studioUrl: '/studioAdmin',
-  },
+  useCdn: false, // Set to false if statically generating pages, using ISR or tag-based revalidation
 })

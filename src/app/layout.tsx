@@ -9,11 +9,13 @@ import {SpeedInsights} from "@vercel/speed-insights/react";
 import {Analytics} from "@vercel/analytics/react";
 import { inter, poppins, roboto } from "@/styles/fonts";
 
+// Configure viewport separately
 export const viewport = {
     width: "device-width",
     initialScale: 1,
 };
 
+// Configure metadata
 export const metadata: Metadata = {
     title: "Bernard Clarke | Front-end Javascript React developer",
     description: "Bernard Clarke is a front-end Javascript React developer based in vancouver, BC. I have a passion for creating beautiful, responsive, and accessible web applications and website. I'm currently looking for an opportunity to work with react, typescript, and next.js to create amazing application and develop my skills to become a full stack developer.",
@@ -49,19 +51,13 @@ export const metadata: Metadata = {
 
 
 export default function RootLayout({children,}: { children: React.ReactNode; }) {
+    // Temporarily remove font variables to fix hydration issues
     return (
-        <html lang="en" className={`${inter.variable} ${poppins.variable} ${roboto.variable}`}>
+        <html lang="en">
         <head>
             {/* Preload key resources */}
             <link rel="preconnect" href="https://cdn.sanity.io" crossOrigin="anonymous" />
             <link rel="dns-prefetch" href="https://cdn.sanity.io" />
-            
-            {/* Preload critical CSS */}
-            <link 
-              rel="preload" 
-              href="/styles/globals.css" 
-              as="style"
-            />
             
             {/* Browser hints */}
             <meta name="color-scheme" content="light" />

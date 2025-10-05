@@ -7,10 +7,6 @@ import ServerHomeProjectsDisplay from "@/components/home_page_components/ServerH
 import { HomePageSkills, HomePageBanner } from "@/components/DynamicClientWrapper";
 import Link from "next/link";
 
-// Static generation settings
-export const dynamic = 'force-static';
-export const revalidate = 3600; // Revalidate at most once every hour
-
 export default async function Home() {
     const homePageContentFetch = await fetchFunction(fetchPageContent_home)
     const {bannerSection, StatementSection, projectSection, skillSection, aboutSection} = homePageContentFetch[0]
