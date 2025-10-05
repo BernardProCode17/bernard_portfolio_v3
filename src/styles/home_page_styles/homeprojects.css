@@ -40,17 +40,17 @@
 
 @media screen and (min-width: 40rem) {
     .home_projects-content {
-        max-width: 38.25rem
+        max-width: 38.25rem;
     }
 }
 
 @media screen and (min-width: 64rem) {
     .home_projects-content {
-        max-width: 50rem
+        max-width: 50rem;
     }
 
     .removeLottie {
-        display: none
+        display: none;
     }
 
     .addDisplay {
@@ -65,6 +65,7 @@
         /* width: 100%; */
         -webkit-border-radius: 0.625rem;
         -moz-border-radius: 0.625rem;
+    }
 
     .home_project_display-link {
         box-shadow: 1px 1px 3px var(--text-color);

@@ -1,5 +1,10 @@
 import Link from "next/link";
 import PageSections from "../minor components/PageSections";
+import {
+    CommunicationSkillsLottie,
+    DevelopmentSkillsLottie,
+    DevelopmentToolsLottie
+} from "@/components/minor components/lotties/lottie";
 
 type PageDataSkills = {
     SectionBanner: {
@@ -32,23 +37,23 @@ export default function HomePageSkills({pageData}: { pageData: PageDataSkills })
             <p className="home_skills-subtitleContent">{SectionBanner.content}</p>
 
             <div className="home_skills-content">
-                {/* <SkillsLottie /> */}
+                {/*<SkillsLottie/>*/}
 
                 <div className="article_container">
                     <article className="home_skills-article">
-                        {/*<DevelopmentSkillsLottie/>*/}
+                        <DevelopmentSkillsLottie/>
                         <h3 className="article_title">{Filter[0].title}</h3>
                         <p className="article_content">{Filter[0].Content}</p>
                     </article>
 
                     <article className="home_skills-article">
-                        {/*<CommunicationSkillsLottie/>*/}
+                        <CommunicationSkillsLottie/>
                         <h3 className="article_title">{Filter[1].title}</h3>
                         <p className="article_content">{Filter[1].Content}</p>
                     </article>
 
                     <article className="home_skills-article">
-                        {/*<DevelopmentToolsLottie/>*/}
+                        <DevelopmentToolsLottie/>
                         <h3 className="article_title">{Filter[2].title}</h3>
                         <p className="article_content">{Filter[2].Content}</p>
                     </article>

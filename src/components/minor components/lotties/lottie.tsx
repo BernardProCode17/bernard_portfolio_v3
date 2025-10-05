@@ -7,11 +7,11 @@ import developmentSkills from '../../../assets/development_skills_lottie.json'
 import communicationSkills from '../../../assets/communication_skill_lottie.json'
 import developmentTools from '../../../assets/developement_tools_skills_lottie.json'
 
-type LottieProps = { display: string }
+// type LottieProps = { display: string }
 const clientDocument = typeof window !== 'undefined'
 
 
-export function ProjectsLottie({display}: LottieProps) {
+export function ProjectsLottie() {
 
     const [isClient, setIsClient] = useState(false);
 
@@ -29,7 +29,7 @@ export function ProjectsLottie({display}: LottieProps) {
     }
 
     return (
-        <div className={`home_projects-lottie ${display}`}>
+        <div className={`home_projects-lottie`}>
             {isClient && <Lottie options={options} width={'100%'} isClickToPauseDisabled={true}/>}
         </div>
     )
@@ -130,7 +130,7 @@ export function DevelopmentToolsLottie() {
 
 export function SkillImageLottie(lottieFile: object) {
 
-    const [isClient, setIsClient] = useState(false);
+    // const [isClient, setIsClient] = useState(false);
 
     useEffect(() => {
         if (typeof window !== 'undefined') {

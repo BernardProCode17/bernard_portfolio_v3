@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f59ed1ef-aabb-4eae-b75f-2592f34c0098" name="Changes" comment="added background image to the body, created a responsive logo component, styles header and footer">
+    <list default="true" id="f59ed1ef-aabb-4eae-b75f-2592f34c0098" name="Changes" comment="Updated Homepage section backgrounds">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home_page_components/HomePageBanner.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home_page_components/HomePageBanner.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home_page_components/HomePageProjects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home_page_components/HomePageProjects.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home_page_components/HomePageSkills.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home_page_components/HomePageSkills.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/minor components/lotties/lottie.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/minor components/lotties/lottie.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/home_page_styles/homeprojects.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/home_page_styles/homeprojects.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,28 +68,29 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;code.cleanup.on.save&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;js.debugger.nextJs.config.created.client&quot;: &quot;true&quot;,
-    &quot;js.debugger.nextJs.config.created.server&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Berna/OneDrive/Desktop/Portfolio Folder/bernard_portfolio_v3&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\Berna\\OneDrive\\Desktop\\Portfolio Folder\\bernard_portfolio_v3\\node_modules\\prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\berna\\WebstormProjects\\bernard_portfolio_v3\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "code.cleanup.on.save": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "js.debugger.nextJs.config.created.client": "true",
+    "js.debugger.nextJs.config.created.server": "true",
+    "last_opened_file_path": "C:/Users/Berna/OneDrive/Desktop/Portfolio Folder/bernard_portfolio_v3",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\Berna\\OneDrive\\Desktop\\Portfolio Folder\\bernard_portfolio_v3\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "C:\\Users\\berna\\WebstormProjects\\bernard_portfolio_v3\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -120,7 +126,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-WS-251.27812.50" />
+        <option value="bundled-js-predefined-d6986cc7102b-e03c56caf84a-JavaScript-WS-252.23892.411" />
       </set>
     </attachedChunks>
   </component>
@@ -152,6 +158,8 @@
       <workItem from="1736307007368" duration="5891000" />
       <workItem from="1754867206797" duration="827000" />
       <workItem from="1754875400552" duration="4109000" />
+      <workItem from="1755035204818" duration="4345000" />
+      <workItem from="1759686132150" duration="1445000" />
     </task>
     <task id="LOCAL-00001" summary="refactor pages to add content from CMS, refactor fetching to use one fetching function for both page content and project/skills">
       <option name="closed" value="true" />
@@ -385,7 +393,23 @@
       <option name="project" value="LOCAL" />
       <updated>1754879533248</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Updates footer and header styles, and place the author next to the date.">
+      <option name="closed" value="true" />
+      <created>1755038785948</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1755038785948</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Updated Homepage section backgrounds">
+      <option name="closed" value="true" />
+      <created>1755039552403</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1755039552403</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -426,6 +450,8 @@
     <MESSAGE value="Testing lottie changes - remove lottie component from lottie file to individual files" />
     <MESSAGE value="Updated the fetch function cache revalidation to 3 days&#10;removed commented codes&#10;fixes&#10;added notes" />
     <MESSAGE value="added background image to the body, created a responsive logo component, styles header and footer" />
-    <option name="LAST_COMMIT_MESSAGE" value="added background image to the body, created a responsive logo component, styles header and footer" />
+    <MESSAGE value="Updates footer and header styles, and place the author next to the date." />
+    <MESSAGE value="Updated Homepage section backgrounds" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Homepage section backgrounds" />
   </component>
 </project>
