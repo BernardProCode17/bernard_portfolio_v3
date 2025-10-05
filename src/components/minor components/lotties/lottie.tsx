@@ -8,7 +8,7 @@ import communicationSkills from '../../../assets/communication_skill_lottie.json
 import developmentTools from '../../../assets/developement_tools_skills_lottie.json'
 
 // type LottieProps = { display: string }
-const clientDocument = typeof window !== 'undefined'
+//const clientDocument = typeof window !== 'undefined'
 
 
 export function ProjectsLottie() {
@@ -53,7 +53,7 @@ export function SkillsLottie() {
 
     return (
         <div className="home_skills-lottie">
-            {isClient && clientDocument && <Lottie options={options} width={200} isClickToPauseDisabled={true}/>}
+            {isClient && <Lottie options={options} width={200} isClickToPauseDisabled={true}/>}
         </div>
     )
 }
@@ -77,7 +77,7 @@ export function DevelopmentSkillsLottie() {
 
     return (
         <div className="home_skills-lottie home_skills_lottie-display">
-            {isClient && clientDocument && <Lottie options={options} width={200} isClickToPauseDisabled={true}/>}
+            {isClient && <Lottie options={options} width={200} isClickToPauseDisabled={true}/>}
         </div>
     )
 }
@@ -99,7 +99,7 @@ export function CommunicationSkillsLottie() {
 
     return (
         <div className="home_skills-lottie home_skills_lottie-display">
-            {isClient && clientDocument && <Lottie options={options} width={200} isClickToPauseDisabled={true}/>}
+            {isClient && <Lottie options={options} width={200} isClickToPauseDisabled={true}/>}
         </div>
     )
 }
@@ -123,7 +123,7 @@ export function DevelopmentToolsLottie() {
 
     return (
         <div className="home_skills-lottie home_skills_lottie-display">
-            {isClient && clientDocument && <Lottie options={options} width={200}/>}
+            {isClient && <Lottie options={options} width={200}/>}
         </div>
     )
 }
@@ -147,7 +147,7 @@ export function SkillImageLottie(lottieFile: object) {
 
     return (
         <div className="skill_image">
-            {isClient && clientDocument && <Lottie options={options} width={200}/>}
+            {isClient && <Lottie options={options} width={200}/>}
         </div>
     )
 }
