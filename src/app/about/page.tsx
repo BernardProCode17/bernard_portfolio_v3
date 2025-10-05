@@ -27,8 +27,16 @@ export default async function About() {
             <div className="about_wrapper">
 
                 <HeadingSection cssClass="about_page-heading">
-                    <Image src={imgSrc} alt="Bernard Clarke profile photo" width={200} height={200}
-                           className="about_page_profile_photo"/>
+                    <Image 
+                        src={imgSrc} 
+                        alt="Bernard Clarke profile photo" 
+                        width={200} 
+                        height={200}
+                        className="about_page_profile_photo"
+                        priority
+                        loading="eager"
+                        sizes="200px"
+                    />
 
                     <h1 className='about_heading-title'>{profile.name}</h1>
                     <p className='about_heading-subtitle'>{profile.Content.text}</p>
