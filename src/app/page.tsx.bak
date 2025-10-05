@@ -11,6 +11,11 @@ import Link from "next/link";
 export const dynamic = 'force-static';
 export const revalidate = 3600; // Revalidate at most once every hour
 
+// Prerender the home page at build time
+export const generateStaticParams = async () => {
+  return [{}]; // Empty object represents the home route
+};
+
 export default async function Home() {
     const homePageContentFetch = await fetchFunction(fetchPageContent_home)
     const {bannerSection, StatementSection, projectSection, skillSection, aboutSection} = homePageContentFetch[0]
